@@ -5,7 +5,6 @@
 #include <sys/types.h>
 
 int nC = 0;
-int b_duerme = 1;
 
 pthread_cond_t c_dormir;
 pthread_cond_t c_corte;
@@ -45,7 +44,7 @@ int main(){
 	pthread_create(&cliente3, NULL, Cliente, NULL);
 	sleep(1);
 	pthread_create(&cliente4, NULL, Cliente, NULL);
-	sleep(1);
+	sleep(10);
 	pthread_create(&cliente5, NULL, Cliente, NULL);
 	sleep(1);
 	pthread_create(&cliente6, NULL, Cliente, NULL);
@@ -83,7 +82,7 @@ int main(){
 void *Barbero(void *arg){
 	while(1){
 		pthread_mutex_lock(&m_nC);		
-		if(nC == -1) {
+		if(nC == 0) {
 			pthread_mutex_unlock(&m_nC);
 			duerme();	
 		}
@@ -91,9 +90,6 @@ void *Barbero(void *arg){
 			
 			pthread_mutex_unlock(&m_nC);
 			cortaPelo();
-			pthread_mutex_lock(&m_nC);
-			nC--;
-			pthread_mutex_unlock(&m_nC);
 		}
 
 	}
@@ -106,17 +102,23 @@ void *Cliente(void *arg){
 		pthread_mutex_unlock(&m_nC);
 	}
 	else {
-		nC++;
-		if(nC == 1){ 
+		
+		if(nC == 0){
+			nC++;
 			pthread_mutex_unlock(&m_nC);
 			despierta();
 			
 		}	
 		else {
+			nC++;
 			pthread_mutex_unlock(&m_nC);	
 			recibirCorte();
 		}
-
+		
+		pthread_mutex_lock(&m_nC);
+		nC--;
+		pthread_mutex_unlock(&m_nC);
+		
 	}
 }
 
