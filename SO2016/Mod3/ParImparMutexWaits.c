@@ -40,11 +40,12 @@ void *Par(void *arg){
 	int i = 0;
 		
 	while (i < 2000){
-		
+		pthread_mutex_lock(&senial);
 		pthread_cond_wait(&c_impar, &senial); //bloqueo hasta que acabe el impar
 		data++;
 		printf("%d par\n", data);
 		i++;
+		pthread_mutex_unlock(&senial);
 		pthread_cond_signal(&c_par); //fin par
 		
 	}
@@ -53,12 +54,14 @@ void *Par(void *arg){
 void *Impar(void *arg){
 	int i = 0;
 	while(i < 2000){
+		pthread_mutex_lock(&senial);
 		if(i > 0)
 			pthread_cond_wait(&c_par, &senial); //bloqueo hasta que acabe el par			
 		data++;
 		printf("%d impar\n", data);
 		i++;
+		pthread_mutex_unlock(&senial);
 		pthread_cond_signal(&c_impar); //fin impar
-		
+				
 	}
 }
