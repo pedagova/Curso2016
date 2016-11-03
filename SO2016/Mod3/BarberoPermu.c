@@ -95,6 +95,7 @@ void *Barbero(void *arg){
 			nC--;
 			pthread_mutex_unlock(&m_nC);
 		}
+
 	}
 }
 
@@ -115,6 +116,7 @@ void *Cliente(void *arg){
 			pthread_mutex_unlock(&m_nC);	
 			recibirCorte();
 		}
+
 	}
 }
 
@@ -124,7 +126,7 @@ void cortaPelo(){
 }
 
 void abandona(){
-	printf("Cliente: Adios, esto esta lleno\n");
+	printf("Cliente: adios, esto esta lleno\n");
 }
 
 void despierta(){
@@ -134,10 +136,11 @@ void despierta(){
 }
 
 void recibirCorte(){
+	printf("Cliente: buenas tardes, vengo a cortarme el pelo\n");
 	pthread_mutex_lock(&m_corte);
 	pthread_cond_wait(&c_corte, &m_corte);
 	pthread_mutex_unlock(&m_corte);
-	printf("Gracias por el corte\n");
+	printf("Cliente: gracias por el corte\n");
 }
 
 void duerme(){
@@ -145,5 +148,5 @@ void duerme(){
 	pthread_mutex_lock(&m_activo);
 	pthread_cond_wait(&c_dormir, &m_activo);
 	pthread_mutex_unlock(&m_activo);
-	printf("Barbero: Quien me haya despertado se quedar√° sin patillas\n");
+	printf("Barbero: Quien me haya despertado se quedar· sin patillas\n");
 }
