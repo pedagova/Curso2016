@@ -98,8 +98,9 @@ void *Barbero(void *arg){
 void *Cliente(void *arg){
 	pthread_mutex_lock(&m_nC);
 	if(nC == 3) {
-		abandona();
 		pthread_mutex_unlock(&m_nC);
+		abandona();
+		
 	}
 	else {
 		
@@ -150,5 +151,5 @@ void duerme(){
 	pthread_mutex_lock(&m_activo);
 	pthread_cond_wait(&c_dormir, &m_activo);
 	pthread_mutex_unlock(&m_activo);
-	printf("Barbero: Quien me haya despertado se quedar· sin patillas\n");
+	printf("Barbero: Quien me haya despertado se quedar√° sin patillas\n");
 }
