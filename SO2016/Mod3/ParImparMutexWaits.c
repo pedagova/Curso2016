@@ -5,7 +5,6 @@
 #include<unistd.h>
 
 int data = 0;
-int senial_impar = 0; 
 
 pthread_cond_t c_par;
 pthread_cond_t c_impar;
