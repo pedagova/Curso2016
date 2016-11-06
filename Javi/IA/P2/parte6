@@ -1,8 +1,0 @@
-Ejercicio 6
-
-
-El estado queda definido en el AgentAppFrame, juntando el indice de la ciudad y su nombre
-para defir un mapa, y un indice del actual. (el método donde se define es selectionChanged).
-
-la definición de los operadores se encuentran en la misma clase, en el método RouteFindingAgentController 
-para definir el el operador genera distintos posibles caminos y si no encuentra uno genera un aleatorio por el que avanzar.
