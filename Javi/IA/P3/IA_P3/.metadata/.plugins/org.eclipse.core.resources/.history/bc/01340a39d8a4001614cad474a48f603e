@@ -1,0 +1,16 @@
+package missionaryCannibal;
+import aima.core.agent.Action;
+import aima.core.agent.impl.DynamicAction;
+
+public class MissionaryCannibalBoard {
+
+	public static Action MOVE_MC = new DynamicAction("MC");
+	
+	public static Action MOVE_CC = new DynamicAction("CC");
+	
+	public static Action MOVE_MM = new DynamicAction("MM");
+	
+	public static Action MOVE_C = new DynamicAction("C");
+	
+	public static Action MOVE_M = new DynamicAction("M");
+}

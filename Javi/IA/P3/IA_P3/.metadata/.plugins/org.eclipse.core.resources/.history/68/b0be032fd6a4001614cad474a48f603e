@@ -1,0 +1,8 @@
+package missionaryCannibal;
+import aima.core.agent.Action;
+
+public class MissionaryCannibalBoard {
+
+	public static Action 
+	
+}

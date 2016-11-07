@@ -1,0 +1,36 @@
+package missionaryCannibal;
+import aima.core.agent.Action;
+import aima.core.agent.impl.DynamicAction;
+
+public class MissionaryCannibalBoard {
+	//Different kind of moves: "M Missionary C Cannibal"
+	public static Action MOVE_MC = new DynamicAction("MC");
+	
+	public static Action MOVE_CC = new DynamicAction("CC");
+	
+	public static Action MOVE_MM = new DynamicAction("MM");
+	
+	public static Action MOVE_C = new DynamicAction("C");
+	
+	public static Action MOVE_M = new DynamicAction("M");
+
+	//State defined by: (nº Missionaries, nº Cannibals, edge value boat) "0 Left 1 Right"
+	private int[] state; 
+	
+	public MissionaryCannibalBoard() {
+		state = new int[] {3, 3, 0};
+	}
+	
+	public int[] getState() {
+		return state;
+	}
+	
+	public void moveMC(){
+		if( state[1] != 0 && state[0] != 0){
+			if(boatLeft()){
+							
+			}
+		}		
+	}
+	private boatLeft(){return state[2] == 0;}
+}

@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+C:\hlocal\IA_P3\.metadata\.plugins\org.eclipse.jdt.core
+2802751613.index
+2349705491.index
+2795800973.index
+3622790210.index
+1409015658.index
+98127850.index
+3170849665.index
+3561340037.index
+123586017.index
+1066622285.index
+1651134200.index
+85661040.index
+620970588.index
+3567391879.index
+1389807200.index
+3766998880.index
+1335433693.index
+2347296910.index
+768355986.index
