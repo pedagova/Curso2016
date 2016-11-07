@@ -31,28 +31,28 @@ public class MissionaryCannibalBoard {
 	
 	public void moveMC() {
 		moveBoat();
-		state[0] = (boatLeft()) ? state[0] - 1 : state[0] + 1;
-		state[1] = (boatLeft()) ? state[1] - 1 : state[1] + 1;
+		state[0] += (boatLeft()) ? -1 : +1;
+		state[1] += (boatLeft()) ? -1 : +1;
 	}
 
 	public void moveCC() {
 		moveBoat();
-		state[1] = (boatLeft()) ? state[1] - 2 : state[1] + 2;
+		state[1] += (boatLeft()) ? -2 : +2;
 	}
 
 	public void moveMM() {
 		moveBoat();
-		state[0] = (boatLeft()) ? state[0] - 2 : state[0] + 2;
+		state[0] += (boatLeft()) ? -2 : +2;
 	}
 
 	public void moveC() {
 		moveBoat();
-		state[1] = (boatLeft()) ? state[1] - 1 : state[1] + 1;
+		state[1] += (boatLeft()) ? -1 : +1;
 	}
 
 	public void moveM() {
 		moveBoat();
-		state[0] = (boatLeft()) ? state[0] - 1 : state[0] + 1;
+		state[0] += (boatLeft()) ? -1 : +1;
 	}
 	// END State modifiers
 	
