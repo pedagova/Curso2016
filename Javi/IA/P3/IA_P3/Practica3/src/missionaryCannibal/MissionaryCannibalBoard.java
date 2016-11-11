@@ -18,9 +18,17 @@ public class MissionaryCannibalBoard {
 	// State defined by: (nº Missionaries, nº Cannibals, edge value boat)
 	// "0 Left 1 Right"
 	private int[] state;
-
+	
 	public MissionaryCannibalBoard() {
 		state = new int[] { 3, 3, 0 };
+	}
+
+	public MissionaryCannibalBoard(MissionaryCannibalBoard board) {
+		this(board.getState());
+	}
+
+	public MissionaryCannibalBoard(int[] is) {
+		state = new int[] {is[0], is[1], is[2]};
 	}
 
 	public int[] getState() {
@@ -30,34 +38,38 @@ public class MissionaryCannibalBoard {
 	//State Modifiers
 	
 	public void moveMC() {
-		moveBoat();
 		state[0] += (boatLeft()) ? -1 : +1;
 		state[1] += (boatLeft()) ? -1 : +1;
+		moveBoat();
 	}
 
 	public void moveCC() {
-		moveBoat();
 		state[1] += (boatLeft()) ? -2 : +2;
+		moveBoat();
 	}
 
 	public void moveMM() {
-		moveBoat();
 		state[0] += (boatLeft()) ? -2 : +2;
+		moveBoat();
 	}
 
 	public void moveC() {
-		moveBoat();
 		state[1] += (boatLeft()) ? -1 : +1;
+		moveBoat();
 	}
 
 	public void moveM() {
-		moveBoat();
 		state[0] += (boatLeft()) ? -1 : +1;
+		moveBoat();
 	}
 	// END State modifiers
 	
 	//Move Pre-conditions
 	public boolean canMoveBoat(Action where){
+		
+		if(!(state[0] == 3 || state[0] == 0) && state[0] != state[1]) return false;
+		
+		//if(state[0] != 0 && state[0] != state[1]) return false;
 		
 		if(where.equals(MOVE_C)){
 			
@@ -69,35 +81,35 @@ public class MissionaryCannibalBoard {
 		}else if(where.equals(MOVE_CC)){
 			
 			if(boatLeft()){
-				if(state[1] > 1){return false;}
+				if(state[1] < 2){return false;}
 			}	
-			else if(state[1] < 3){return false;}
+			else if(state[1] >= 2){return false;}
 			
 		}else if(where.equals(MOVE_MC)){
 			
 			if(boatLeft()){
-				if(state[1] == 0 || state[0] == 0){return false;}
+				if(state[1] == 0 && state[0] == 0){return false;}
 			}	
-			else if(state[1] == 3 || state[0] == 3){return false;}
+			else if(state[1] == 3 && state[0] == 3){return false;}
 			
 		}
 		else if(where.equals(MOVE_MM)){
 			
 			if(boatLeft()){
-				if(state[0] > 1){return false;}
+				if(state[0] < 2){return false;}
 			}	
-			else if(state[0] < 3){return false;}
+			else if(state[0] >= 2){return false;}
 			
 		}
 		else if(where.equals(MOVE_M)){
 			
 			if(boatLeft()){
+
 				if(state[0] == 0){return false;}
 			}	
 			else if(state[0] == 3){return false;}
 			
 		}
-		
 		return true;
 	}
 	//END Move Pre-conditions
@@ -129,7 +141,7 @@ public class MissionaryCannibalBoard {
 	
 	@Override
 	public String toString(){return "   M    C   B   \n"
-								+ "   " + state[2] + "   " + state[1] + "   " + ((boatLeft()) ? "L" : "R");
+								+ "   " + state[0] + "   " + state[1] + "   " + ((boatLeft()) ? "L" : "R");
 	}
 	
 	//Private Methods
