@@ -1,0 +1,14 @@
+package blackWhitePuzzle;
+
+import aima.core.search.framework.GoalTest;
+import eightPuzzle.EightPuzzleBoard;
+
+public class BWPuzzleGoalTest implements GoalTest {
+	BWPuzzleBoard goal = new BWPuzzleBoard(
+			new int[] { Piece.WHITE, Piece.WHITE, Piece.WHITE, Piece.HOLE, Piece.BLACK, Piece.BLACK, Piece.BLACK });
+
+	public boolean isGoalState(Object state) {
+		EightPuzzleBoard board = (EightPuzzleBoard) state;
+		return board.equals(goal);
+	}
+}

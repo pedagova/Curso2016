@@ -1,12 +1,7 @@
 package blackWhitePuzzle;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import aima.core.agent.Action;
 import aima.core.agent.impl.DynamicAction;
-import aima.core.util.datastructure.XYLocation;
-import eightPuzzle.EightPuzzleBoard;
 
 public class BWPuzzleBoard {
 
@@ -29,14 +24,14 @@ public class BWPuzzleBoard {
 				Piece.HOLE, Piece.WHITE, Piece.WHITE, Piece.WHITE };
 	}
 
-	public BWPuzzleBoard(int[] state) {
+	public BWPuzzleBoard(Piece[] state) {
 		this.state = new Piece[state.length];
 		System.arraycopy(state, 0, this.state, 0, state.length);
 	}
-
-	/*public BWPuzzleBoard(BWPuzzleBoard copyBoard) {
-		this(copyBoard.getState());
-	}*/
+	
+	public BWPuzzleBoard(BWPuzzleBoard board) {
+		this(board.getState());
+	}
 
 	public Piece[] getState() {
 		return state;

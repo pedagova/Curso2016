@@ -1,0 +1,163 @@
+package blackWhitePuzzle;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
+
+import aima.core.agent.Action;
+import aima.core.environment.bwPuzzle.bwPuzzleBoard;
+import aima.core.environment.bwPuzzle.bwPuzzleFunctionFactory;
+import aima.core.environment.bwPuzzle.bwPuzzleGoalTest;
+import aima.core.environment.bwPuzzle.ManhattanHeuristicFunction;
+import aima.core.environment.bwPuzzle.MisplacedTilleHeuristicFunction;
+import aima.core.search.framework.GraphSearch;
+import aima.core.search.framework.Problem;
+import aima.core.search.framework.Search;
+import aima.core.search.framework.SearchAgent;
+import aima.core.search.informed.AStarSearch;
+import aima.core.search.informed.GreedyBestFirstSearch;
+import aima.core.search.local.SimulatedAnnealingSearch;
+import aima.core.search.uninformed.DepthLimitedSearch;
+import aima.core.search.uninformed.IterativeDeepeningSearch;
+
+public class BWPuzzleDemo {
+	static bwPuzzleBoard boardWithThreeMoveSolution = new bwPuzzleBoard(new int[] { 1, 2, 5, 3, 4, 0, 6, 7, 8 });;
+
+	static bwPuzzleBoard random1 = new bwPuzzleBoard(new int[] { 1, 4, 2, 7, 5, 8, 3, 0, 6 });
+
+	static bwPuzzleBoard extreme = new bwPuzzleBoard(new int[] { 0, 8, 7, 6, 5, 4, 3, 2, 1 });
+
+	public static void main(String[] args) {
+		bwPuzzleDLSDemo();
+		bwPuzzleIDLSDemo();
+		bwPuzzleGreedyBestFirstDemo();
+		bwPuzzleGreedyBestFirstManhattanDemo();
+		bwPuzzleAStarDemo();
+		bwPuzzleAStarManhattanDemo();
+		bwPuzzleSimulatedAnnealingDemo();
+	}
+
+	private static void bwPuzzleDLSDemo() {
+		System.out.println("\nbwPuzzleDemo recursive DLS (9) -->");
+		try {
+			Problem problem = new Problem(boardWithThreeMoveSolution, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			Search search = new DepthLimitedSearch(9);
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleIDLSDemo() {
+		System.out.println("\nbwPuzzleDemo Iterative DLS -->");
+		try {
+			Problem problem = new Problem(random1, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			Search search = new IterativeDeepeningSearch();
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleGreedyBestFirstDemo() {
+		System.out.println("\nbwPuzzleDemo Greedy Best First Search (MisplacedTileHeursitic)-->");
+		try {
+			Problem problem = new Problem(boardWithThreeMoveSolution, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			Search search = new GreedyBestFirstSearch(new GraphSearch(), new MisplacedTilleHeuristicFunction());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleGreedyBestFirstManhattanDemo() {
+		System.out.println("\nbwPuzzleDemo Greedy Best First Search (ManhattanHeursitic)-->");
+		try {
+			Problem problem = new Problem(boardWithThreeMoveSolution, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			Search search = new GreedyBestFirstSearch(new GraphSearch(), new ManhattanHeuristicFunction());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleAStarDemo() {
+		System.out.println("\nbwPuzzleDemo AStar Search (MisplacedTileHeursitic)-->");
+		try {
+			Problem problem = new Problem(random1, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			Search search = new AStarSearch(new GraphSearch(), new MisplacedTilleHeuristicFunction());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleSimulatedAnnealingDemo() {
+		System.out.println("\nbwPuzzleDemo Simulated Annealing  Search -->");
+		try {
+			Problem problem = new Problem(random1, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			SimulatedAnnealingSearch search = new SimulatedAnnealingSearch(new ManhattanHeuristicFunction());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			System.out.println("Search Outcome=" + search.getOutcome());
+			System.out.println("Final State=\n" + search.getLastSearchState());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void bwPuzzleAStarManhattanDemo() {
+		System.out.println("\nbwPuzzleDemo AStar Search (ManhattanHeursitic)-->");
+		try {
+			Problem problem = new Problem(random1, bwPuzzleFunctionFactory.getActionsFunction(),
+					bwPuzzleFunctionFactory.getResultFunction(), new bwPuzzleGoalTest());
+			Search search = new AStarSearch(new GraphSearch(), new ManhattanHeuristicFunction());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void printInstrumentation(Properties properties) {
+		Iterator<Object> keys = properties.keySet().iterator();
+		while (keys.hasNext()) {
+			String key = (String) keys.next();
+			String property = properties.getProperty(key);
+			System.out.println(key + " : " + property);
+		}
+
+	}
+
+	private static void printActions(List<Action> actions) {
+		for (int i = 0; i < actions.size(); i++) {
+			String action = actions.get(i).toString();
+			System.out.println(action);
+		}
+	}
+
+}
