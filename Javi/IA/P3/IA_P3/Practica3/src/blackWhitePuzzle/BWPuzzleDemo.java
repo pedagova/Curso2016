@@ -1,51 +1,56 @@
 package blackWhitePuzzle;
 
+/*import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+*/
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
 import aima.core.agent.Action;
-import aima.core.environment.eightpuzzle.EightPuzzleBoard;
-import aima.core.environment.eightpuzzle.EightPuzzleFunctionFactory;
-import aima.core.environment.eightpuzzle.EightPuzzleGoalTest;
-import aima.core.environment.eightpuzzle.ManhattanHeuristicFunction;
-import aima.core.environment.eightpuzzle.MisplacedTilleHeuristicFunction;
-import aima.core.search.framework.GraphSearch;
 import aima.core.search.framework.Problem;
 import aima.core.search.framework.Search;
 import aima.core.search.framework.SearchAgent;
-import aima.core.search.informed.AStarSearch;
-import aima.core.search.informed.GreedyBestFirstSearch;
-import aima.core.search.local.SimulatedAnnealingSearch;
 import aima.core.search.uninformed.DepthLimitedSearch;
 import aima.core.search.uninformed.IterativeDeepeningSearch;
 
 public class BWPuzzleDemo {
-	static BWPuzzleBoard boardWithThreeMoveSolution = new BWPuzzleBoard(
+	static BWPuzzleBoard board1 = new BWPuzzleBoard(
 			new Piece[] { Piece.BLACK, Piece.BLACK, Piece.BLACK, Piece.HOLE, Piece.WHITE, Piece.WHITE, Piece.WHITE });;
-
-	static BWPuzzleBoard random1 = new BWPuzzleBoard(
+	
+	/*static BWPuzzleBoard board1 = new BWPuzzleBoard(
 			new Piece[] { Piece.WHITE, Piece.BLACK, Piece.WHITE, Piece.HOLE, Piece.WHITE, Piece.BLACK, Piece.BLACK });
 
-	static BWPuzzleBoard extreme = new BWPuzzleBoard(
+	/*static BWPuzzleBoard extreme = new BWPuzzleBoard(
 			new Piece[] { Piece.WHITE, Piece.BLACK, Piece.HOLE, Piece.BLACK, Piece.WHITE, Piece.WHITE, Piece.BLACK });
-
+	*/
 	public static void main(String[] args) {
+		/*try {
+			System.setOut(new PrintStream(new FileOutputStream("salida_normal.txt")));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}*/
+		//System.setErr(new PrintStream(new FileOutputStream("salida_error.txt")));
 		bwPuzzleDLSDemo();
 		bwPuzzleIDLSDemo();
-		bwPuzzleGreedyBestFirstDemo();
-		bwPuzzleGreedyBestFirstManhattanDemo();
-		bwPuzzleAStarDemo();
-		bwPuzzleAStarManhattanDemo();
-		bwPuzzleSimulatedAnnealingDemo();
+		//bwPuzzleGreedyBestFirstDemo();
+		//wPuzzleGreedyBestFirstManhattanDemo();
+		//bwPuzzleAStarDemo();
+		//bwPuzzleAStarManhattanDemo();
+		//bwPuzzleSimulatedAnnealingDemo();
 	}
 
-	private static void bwPuzzleDLSDemo() {
+	private static void bwPuzzleDLSDemo(){
+		
+		
+		
 		System.out.println("\nBlackWhitePuzzleDemo recursive DLS (9) -->");
 		try {
-			Problem problem = new Problem(boardWithThreeMoveSolution, BWPuzzleFunctionFactory.getActionsFunction(),
-					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
-			Search search = new DepthLimitedSearch(9);
+			Problem problem = new Problem(board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest(), new BWPuzzleStepCostFunction());
+			Search search = new DepthLimitedSearch(12);
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
 			printInstrumentation(agent.getInstrumentation());
@@ -58,8 +63,8 @@ public class BWPuzzleDemo {
 	private static void bwPuzzleIDLSDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo Iterative DLS -->");
 		try {
-			Problem problem = new Problem(random1, BWPuzzleFunctionFactory.getActionsFunction(),
-					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
+			Problem problem = new Problem(board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest(), new BWPuzzleStepCostFunction());
 			Search search = new IterativeDeepeningSearch();
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
@@ -70,7 +75,7 @@ public class BWPuzzleDemo {
 
 	}
 
-	private static void bwPuzzleGreedyBestFirstDemo() {
+	/*private static void bwPuzzleGreedyBestFirstDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo Greedy Best First Search (MisplacedTileHeursitic)-->");
 		try {
 			Problem problem = new Problem(boardWithThreeMoveSolution, BWPuzzleFunctionFactory.getActionsFunction(),
@@ -83,9 +88,9 @@ public class BWPuzzleDemo {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
-	private static void bwPuzzleGreedyBestFirstManhattanDemo() {
+	/*private static void bwPuzzleGreedyBestFirstManhattanDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo Greedy Best First Search (ManhattanHeursitic)-->");
 		try {
 			Problem problem = new Problem(boardWithThreeMoveSolution, BWPuzzleFunctionFactory.getActionsFunction(),
@@ -98,9 +103,9 @@ public class BWPuzzleDemo {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
-	private static void bwPuzzleAStarDemo() {
+	/*private static void bwPuzzleAStarDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo AStar Search (MisplacedTileHeursitic)-->");
 		try {
 			Problem problem = new Problem(random1, BWPuzzleFunctionFactory.getActionsFunction(),
@@ -113,9 +118,9 @@ public class BWPuzzleDemo {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
-	private static void bwPuzzleSimulatedAnnealingDemo() {
+	/*private static void bwPuzzleSimulatedAnnealingDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo Simulated Annealing  Search -->");
 		try {
 			Problem problem = new Problem(random1, BWPuzzleFunctionFactory.getActionsFunction(),
@@ -129,9 +134,9 @@ public class BWPuzzleDemo {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
-	private static void bwPuzzleAStarManhattanDemo() {
+	/*private static void bwPuzzleAStarManhattanDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo AStar Search (ManhattanHeursitic)-->");
 		try {
 			Problem problem = new Problem(random1, BWPuzzleFunctionFactory.getActionsFunction(),
@@ -144,7 +149,7 @@ public class BWPuzzleDemo {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 	private static void printInstrumentation(Properties properties) {
 		Iterator<Object> keys = properties.keySet().iterator();

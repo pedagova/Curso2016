@@ -26,22 +26,23 @@ public class BWPuzzleFunctionFactory {
 	}
 
 	private static class EPActionsFunction implements ActionsFunction {
+		
 		public Set<Action> actions(Object state) {
 			BWPuzzleBoard board = (BWPuzzleBoard) state;
 
 			Set<Action> actions = new LinkedHashSet<Action>();
 
-			if (board.canMovePiece(BWPuzzleBoard.WHITE_ADY, )) {
-				actions.add(BWPuzzleBoard.WHITE_ADY);
+			for(Action a : BWPuzzleBoard.Iz){
+				if(board.canMoveHole(a)){
+					actions.add(a);
+				}
 			}
-			if (board.canMovePiece(BWPuzzleBoard.WHITE_ONE)) {
-				actions.add(BWPuzzleBoard.WHITE_ONE);
-			}
-			if (board.canMovePiece(BWPuzzleBoard.WHITE_TWO)) {
-				actions.add(BWPuzzleBoard.WHITE_TWO);
+			for(Action a : BWPuzzleBoard.Der){
+				if(board.canMoveHole(a)){
+					actions.add(a);
+				}
 			}
 			
-
 			return actions;
 		}
 	}
@@ -50,38 +51,43 @@ public class BWPuzzleFunctionFactory {
 		public Object result(Object s, Action a) {
 			BWPuzzleBoard board = (BWPuzzleBoard) s;
 
-			if (BWPuzzleBoard.WHITE_ADY.equals(a)
-					&& board.canMovePiece(BWPuzzleBoard.WHITE_ADY)) {
+			if(a.equals(BWPuzzleBoard.Iz[0]) && 
+					board.canMoveHole(BWPuzzleBoard.Iz[0])){
 				BWPuzzleBoard newBoard = new BWPuzzleBoard(board);
-				newBoard.moveWhiteAdy();
+				newBoard.moveIz();
 				return newBoard;
-			} else if (BWPuzzleBoard.WHITE_ONE.equals(a)
-					&& board.canMovePiece(BWPuzzleBoard.WHITE_ONE)) {
+			}
+			else if(a.equals(BWPuzzleBoard.Iz[1]) && 
+					board.canMoveHole(BWPuzzleBoard.Iz[1])){
 				BWPuzzleBoard newBoard = new BWPuzzleBoard(board);
-				newBoard.moveWhiteOne();
+				newBoard.moveIzIz();
 				return newBoard;
-			} else if (BWPuzzleBoard.WHITE_TWO.equals(a)
-					&& board.canMovePiece(BWPuzzleBoard.WHITE_TWO)) {
+			}
+			else if(a.equals(BWPuzzleBoard.Iz[2]) && 
+					board.canMoveHole(BWPuzzleBoard.Iz[2])){
 				BWPuzzleBoard newBoard = new BWPuzzleBoard(board);
-				newBoard.moveWhiteTwo();
+				newBoard.moveIzIzIz();
 				return newBoard;
-			} else if (BWPuzzleBoard.BLACK_ADY.equals(a)
-					&& board.canMovePiece(BWPuzzleBoard.BLACK_ADY)) {
+			}
+			else if(a.equals(BWPuzzleBoard.Der[0]) && 
+					board.canMoveHole(BWPuzzleBoard.Der[0])){
 				BWPuzzleBoard newBoard = new BWPuzzleBoard(board);
-				newBoard.moveBlackAdy();
+				newBoard.moveDer();
 				return newBoard;
-			} else if (BWPuzzleBoard.BLACK_ONE.equals(a)
-					&& board.canMovePiece(BWPuzzleBoard.BLACK_ONE)) {
+			}
+			else if(a.equals(BWPuzzleBoard.Der[1]) && 
+					board.canMoveHole(BWPuzzleBoard.Der[1])){
 				BWPuzzleBoard newBoard = new BWPuzzleBoard(board);
-				newBoard.moveBlackOne();
+				newBoard.moveDerDer();
 				return newBoard;
-			} else if (BWPuzzleBoard.BLACK_TWO.equals(a)
-					&& board.canMovePiece(BWPuzzleBoard.BLACK_TWO)) {
+			}
+			else if(a.equals(BWPuzzleBoard.Der[2]) && 
+					board.canMoveHole(BWPuzzleBoard.Der[2])){
 				BWPuzzleBoard newBoard = new BWPuzzleBoard(board);
-				newBoard.moveBlackTwo();
+				newBoard.moveDerDerDer();
 				return newBoard;
-			} 
-
+			}
+			
 			// The Action is not understood or is a NoOp
 			// the result will be the current state.
 			return s;

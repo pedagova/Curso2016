@@ -1,20 +1,22 @@
 package blackWhitePuzzle;
 
 import aima.core.search.framework.GoalTest;
-import eightPuzzle.EightPuzzleBoard;
 
 public class BWPuzzleGoalTest implements GoalTest {
 	BWPuzzleBoard goal_1 = new BWPuzzleBoard(
-			new Piece[] { Piece.WHITE, Piece.WHITE, Piece.WHITE, Piece.HOLE, Piece.BLACK, Piece.BLACK, Piece.BLACK });
+			new Piece[] { Piece.WHITE, Piece.WHITE, Piece.WHITE, Piece.HOLE, 
+					Piece.BLACK, Piece.BLACK, Piece.BLACK });
 
 	BWPuzzleBoard goal_2 = new BWPuzzleBoard(
-			new Piece[] { Piece.HOLE, Piece.WHITE, Piece.WHITE, Piece.WHITE, Piece.BLACK, Piece.BLACK, Piece.BLACK });
+			new Piece[] { Piece.HOLE, Piece.WHITE, Piece.WHITE,
+					Piece.WHITE, Piece.BLACK, Piece.BLACK, Piece.BLACK });
 
 	BWPuzzleBoard goal_3 = new BWPuzzleBoard(
-			new Piece[] { Piece.WHITE, Piece.WHITE, Piece.WHITE, Piece.BLACK, Piece.BLACK, Piece.BLACK, Piece.HOLE });
+			new Piece[] { Piece.WHITE, Piece.WHITE, Piece.WHITE, Piece.BLACK,
+					Piece.BLACK, Piece.BLACK, Piece.HOLE });
 
 	public boolean isGoalState(Object state) {
-		BWPuzzleGoalTest board = (BWPuzzleGoalTest) state;
+		BWPuzzleBoard board = (BWPuzzleBoard) state;
 		if(board.equals(goal_1)){
 			return true;
 		}else if(board.equals(goal_2)){

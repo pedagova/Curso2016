@@ -4,85 +4,86 @@ import aima.core.agent.Action;
 import aima.core.agent.impl.DynamicAction;
 
 public class BWPuzzleBoard {
-
-	public static Action WHITE_ADY = new DynamicAction("White_ady");
-	public static Action WHITE_ONE = new DynamicAction("White_1");
-	public static Action WHITE_TWO = new DynamicAction("White_2");
-
-	public static Action BLACK_ADY = new DynamicAction("Black_ady");
-	public static Action BLACK_ONE = new DynamicAction("Black_1");
-	public static Action BLACK_TWO = new DynamicAction("Black_2");
+	public static Action[] Iz = { new DynamicAction("Iz"),
+			new DynamicAction("IzIz"), new DynamicAction("IzIzIz") };
+	public static Action[] Der = { new DynamicAction("Der"),
+			new DynamicAction("DerDer"), new DynamicAction("DerDerDer") };
 
 	private Piece[] state;
-
-	//
-	// PUBLIC METHODS
-	//
+	private int posHole;
 
 	public BWPuzzleBoard() {
 		state = new Piece[] { Piece.BLACK, Piece.BLACK, Piece.BLACK,
 				Piece.HOLE, Piece.WHITE, Piece.WHITE, Piece.WHITE };
+		findHole();
 	}
 
 	public BWPuzzleBoard(Piece[] state) {
 		this.state = new Piece[state.length];
 		System.arraycopy(state, 0, this.state, 0, state.length);
+		findHole();
 	}
-	
+
 	public BWPuzzleBoard(BWPuzzleBoard board) {
 		this(board.getState());
+		findHole();
 	}
-
-	public Piece[] getState() {
-		return state;
+	
+	// -----------Possible moves---------------------
+	public void moveIz() {
+		swichPieces(posHole - 1, posHole);
+		posHole = posHole - 1;
+		
 	}
-
-	public void moveWhiteAdy(int position) {
-		state[position - 1] = state[position];
-		state[position] = Piece.HOLE;
+	public void moveIzIz() {
+		swichPieces(posHole - 2, posHole);
+		posHole = posHole - 2;
+		
 	}
-
-	public void moveWhiteOne(int position) {
-		state[position - 2] = state[position];
-		state[position] = Piece.HOLE;
+	public void moveIzIzIz() {
+		swichPieces(posHole - 3, posHole);
+		posHole = posHole - 3;
+		
 	}
-
-	public void moveWhiteTwo(int position) {
-		state[position - 3] = state[position];
-		state[position] = Piece.HOLE;
+	
+	public void moveDer() {
+		swichPieces(posHole + 1, posHole);
+		posHole = posHole + 1;
+		
 	}
-
-	public void moveBlackAdy(int position) {
-		state[position + 1] = state[position];
-		state[position] = Piece.HOLE;
+	public void moveDerDer() {
+		swichPieces(posHole + 2, posHole);
+		posHole = posHole + 2;
+		
 	}
-
-	public void moveBlackOne(int position) {
-		state[position + 2] = state[position];
-		state[position] = Piece.HOLE;
-
+	public void moveDerDerDer() {
+		swichPieces(posHole + 3, posHole);
+		posHole = posHole + 3;
+		
 	}
-	public void moveBlackTwo(int position) {
-		state[position + 3] = state[position];
-		state[position] = Piece.HOLE;
-	}
+// -----------End Possible moves---------------------
 
-	public boolean canMovePiece(Action where, int ini) {
-		if (where.equals(WHITE_ADY) && validLocation(ini, -1))
-			return true;
-		else if (where.equals(WHITE_ONE) && validLocation(ini, -2))
-			return true;
-		else if (where.equals(WHITE_TWO) && validLocation(ini, -3))
-			return true;
-		else if (where.equals(BLACK_ADY) && validLocation(ini, 1))
-			return true;
-		else if (where.equals(BLACK_ONE) && validLocation(ini, 2))
-			return true;
-		else if (where.equals(BLACK_TWO) && validLocation(ini, 3))
-			return true;
+//------------Pre-Conds moves -----------------------
+	public boolean canMoveHole(Action where){
+		for(int i = 0; i < Iz.length; i++){
+			if(Iz[i].equals(where)){
+				if(posHole - (i + 1) >= 0){
+					return true;
+				}
+			}
+		}
+		for(int i = 0; i < Der.length; i++){
+			if(Der[i].equals(where)){
+				if(posHole + (i + 1) < 7){
+					return true;
+				}
+			}
+		}
 		return false;
 	}
+//------------End Pre-Conds moves -------------------
 
+//------------Comparation Overrides -----------------
 	@Override
 	public boolean equals(Object o) {
 
@@ -110,7 +111,10 @@ public class BWPuzzleBoard {
 		}
 		return result;
 	}
-
+//--------------End Comparation Overrides -----------------------------
+	
+	
+//--------------Other methods ------------------------
 	@Override
 	public String toString() {
 		StringBuilder chain = new StringBuilder();
@@ -119,16 +123,31 @@ public class BWPuzzleBoard {
 			chain.append(state[i].toString() + " ");
 		}
 		chain.append("]");
-		return chain.toString();
+		return chain.toString() + "" + posHole;
+	}
+//----------------End Other methods ----------------------
+	
+//------------Private Methods------------------------
+	private Piece[] getState() {
+		return state;
 	}
 
-	//
-	// PRIVATE METHODS
-	//
-
-	private boolean validLocation(int position, int modifier) {
-		return (state[position + modifier] == Piece.HOLE
-				&& 0 <= position + modifier && position + modifier < state.length);
+	private void findHole() {
+		for (int i = 0; i < 9; i++) {
+			if (state[i].equals(Piece.HOLE)) {
+				posHole = i;
+				return;
+			}
+		}
 	}
-
+	
+	//p1 -> new hole position
+	//p2 -> new piece position
+	
+	private void swichPieces(int p1, int p2){
+		Piece aux = state[p1];
+		state[p1] = Piece.HOLE;
+		state[p2] = aux;
+	}
+//------------Private Methods------------------------
 }

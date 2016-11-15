@@ -1,8 +1,6 @@
 package missionaryCannibal;
 
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
@@ -34,12 +32,12 @@ public class MissionaryCannibalDemo {
 	}
 
 	private static void missionaryCannibalDSLDemo() {
-		System.out.println("\nMissionary Cannibal recursive DLS (9) -->");
+		System.out.println("\nMissionary Cannibal recursive DLS (3) -->");
 		try {
 			Problem problem = new Problem(basicBoard, MissionaryCannibalFunctionFactory
 					.getActionsFunction(), MissionaryCannibalFunctionFactory
 					.getResultFunction(), new MissionaryCannibalGoalTest());
-			Search search = new DepthLimitedSearch(9);
+			Search search = new DepthLimitedSearch(3);
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
 			printInstrumentation(agent.getInstrumentation());
