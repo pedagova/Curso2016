@@ -34,8 +34,8 @@ int sys_barrier_init(sys_barrier_t *barrier, unsigned int nr_threads)
  	pthread_mutex_init(&barrier->mutex, NULL);
 	pthread_cond_init(&barrier->cond, NULL);
 	barrier->max_threads = nr_threads;
-	barrier->nr_thread_arrived[0] = 0; // HILOS PARES
-	barrier->nr_thread_arrived[1] = 0; // HILOS IMPARES
+	barrier->nr_threads_arrived[0] = 0; // HILOS PARES
+	barrier->nr_threads_arrived[1] = 0; // HILOS IMPARES
 	return 0;
 }
 
@@ -46,7 +46,11 @@ int sys_barrier_destroy(sys_barrier_t *barrier)
 	      ... To be completed ....
 	*/
 
+	barrier->nr_threads_arrived[0] = 0; // HILOS PARES
+	barrier->nr_threads_arrived[1] = 0; // HILOS IMPARES
+
 	pthread_mutex_destroy(&barrier->mutex);
+
 	pthread_cond_destroy(&barrier->cond);
 
 	return 0;
@@ -73,23 +77,26 @@ int sys_barrier_wait(sys_barrier_t *barrier)
 	if (barrier->cur_barrier == '0') { // HILO PAR
 		barrier->nr_threads_arrived[0]++;
 	}
-	else if (barrier->cur_barrier == '1') {
+	else if (barrier->cur_barrier == '1') { // HILO IMPAR
 		barrier->nr_threads_arrived[1]++;
 	}
 	
-	if( //In the event this is not the last thread to arrive at the barrier, the thread
-	      // must block in the condition variable ) {
+	if (( barrier->nr_threads_arrived[0] + barrier->nr_threads_arrived[1]) <= barrier->max_threads ) {
 
-		pthread_cond_wait(&barrier->cond, &barrier->mutex); /* se bloquea */
-
-	else if () {
+		pthread_cond_wait(&barrier->cond,&barrier->mutex); /* se bloquea */
+	}
+	else {
 
 	// 1. Reset the barrier state in preparation for the next invocation of sys_barrier_wait() and
 	  //      2. Wake up all threads blocked in the barrier
+
+		barrier->nr_threads_arrived[0] = 0; 
+		barrier->nr_threads_arrived[1] = 0;
+		pthread_cond_broadcast(&barrier->cond);
 	
 	}
 
-	pthread_mutex_unlock(barrier->mutex, NULL);
+	pthread_mutex_unlock(&barrier->mutex);
 	return 0;
 }
 
