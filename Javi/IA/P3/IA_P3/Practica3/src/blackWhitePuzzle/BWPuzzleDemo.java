@@ -4,14 +4,19 @@ package blackWhitePuzzle;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 */
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
 import aima.core.agent.Action;
+import aima.core.search.framework.GraphSearch;
 import aima.core.search.framework.Problem;
 import aima.core.search.framework.Search;
 import aima.core.search.framework.SearchAgent;
+import aima.core.search.informed.AStarSearch;
 import aima.core.search.uninformed.DepthLimitedSearch;
 import aima.core.search.uninformed.IterativeDeepeningSearch;
 
@@ -26,18 +31,18 @@ public class BWPuzzleDemo {
 			new Piece[] { Piece.WHITE, Piece.BLACK, Piece.HOLE, Piece.BLACK, Piece.WHITE, Piece.WHITE, Piece.BLACK });
 	*/
 	public static void main(String[] args) {
-		/*try {
+		try {
 			System.setOut(new PrintStream(new FileOutputStream("salida_normal.txt")));
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		}*/
+		}
 		//System.setErr(new PrintStream(new FileOutputStream("salida_error.txt")));
 		bwPuzzleDLSDemo();
-		bwPuzzleIDLSDemo();
+		//bwPuzzleIDLSDemo();
 		//bwPuzzleGreedyBestFirstDemo();
 		//wPuzzleGreedyBestFirstManhattanDemo();
-		//bwPuzzleAStarDemo();
+		bwPuzzleAStarDemo();
 		//bwPuzzleAStarManhattanDemo();
 		//bwPuzzleSimulatedAnnealingDemo();
 	}
@@ -63,7 +68,10 @@ public class BWPuzzleDemo {
 	private static void bwPuzzleIDLSDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo Iterative DLS -->");
 		try {
-			Problem problem = new Problem(board1, BWPuzzleFunctionFactory.getActionsFunction(),
+			Piece w = Piece.WHITE, b = Piece.BLACK, h = Piece.HOLE;
+			Piece[] pi = {b,w,b,w,b,h,w};
+			BWPuzzleBoard p = new BWPuzzleBoard(pi);			
+			Problem problem = new Problem(p, BWPuzzleFunctionFactory.getActionsFunction(),
 					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest(), new BWPuzzleStepCostFunction());
 			Search search = new IterativeDeepeningSearch();
 			SearchAgent agent = new SearchAgent(problem, search);
@@ -105,12 +113,17 @@ public class BWPuzzleDemo {
 
 	}*/
 
-	/*private static void bwPuzzleAStarDemo() {
+	private static void bwPuzzleAStarDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo AStar Search (MisplacedTileHeursitic)-->");
 		try {
-			Problem problem = new Problem(random1, BWPuzzleFunctionFactory.getActionsFunction(),
+			
+			Piece w = Piece.WHITE, b = Piece.BLACK, h = Piece.HOLE;
+			Piece[] pi = {b,w,b,w,b,h,w};
+			BWPuzzleBoard p = new BWPuzzleBoard(pi);
+			
+			Problem problem = new Problem(p, BWPuzzleFunctionFactory.getActionsFunction(),
 					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
-			Search search = new AStarSearch(new GraphSearch(), new MisplacedTilleHeuristicFunction());
+			Search search = new AStarSearch(new GraphSearch(), new HeuManh());
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
 			printInstrumentation(agent.getInstrumentation());
@@ -118,7 +131,7 @@ public class BWPuzzleDemo {
 			e.printStackTrace();
 		}
 
-	}*/
+	}
 
 	/*private static void bwPuzzleSimulatedAnnealingDemo() {
 		System.out.println("\nBlackWhitePuzzleDemo Simulated Annealing  Search -->");

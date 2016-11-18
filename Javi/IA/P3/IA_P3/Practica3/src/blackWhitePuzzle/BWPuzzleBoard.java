@@ -128,7 +128,7 @@ public class BWPuzzleBoard {
 //----------------End Other methods ----------------------
 	
 //------------Private Methods------------------------
-	private Piece[] getState() {
+	public Piece[] getState() {
 		return state;
 	}
 

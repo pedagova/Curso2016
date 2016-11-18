@@ -1,13 +1,31 @@
 
 BlackWhitePuzzleDemo recursive DLS (9) -->
-Action[name==CutOff]
-pathCost : 0
-nodesExpanded : 125575
-
-BlackWhitePuzzleDemo Iterative DLS -->
-Ya ta[ W W W H B B B ]3
-Action[name==IzIz]
+Action[name==Iz]
+Action[name==Iz]
 Action[name==DerDerDer]
 Action[name==Iz]
-pathCost : 3.0
-nodesExpanded : 17
+Action[name==Iz]
+Action[name==DerDerDer]
+Action[name==Der]
+Action[name==IzIzIz]
+Action[name==IzIzIz]
+Action[name==DerDer]
+Action[name==DerDerDer]
+Action[name==IzIz]
+pathCost : 17.0
+nodesExpanded : 647320
+
+BlackWhitePuzzleDemo AStar Search (MisplacedTileHeursitic)-->
+Action[name==Der]
+Action[name==IzIz]
+Action[name==Der]
+Action[name==IzIzIz]
+Action[name==IzIz]
+Action[name==Der]
+Action[name==DerDerDer]
+Action[name==IzIz]
+Action[name==IzIz]
+pathCost : 9.0
+nodesExpanded : 15
+queueSize : 17
+maxQueueSize : 18
