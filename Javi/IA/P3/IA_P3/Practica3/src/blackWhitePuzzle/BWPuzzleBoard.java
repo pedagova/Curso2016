@@ -4,10 +4,10 @@ import aima.core.agent.Action;
 import aima.core.agent.impl.DynamicAction;
 
 public class BWPuzzleBoard {
-	public static Action[] Iz = { new DynamicAction("Iz"),
-			new DynamicAction("IzIz"), new DynamicAction("IzIzIz") };
-	public static Action[] Der = { new DynamicAction("Der"),
-			new DynamicAction("DerDer"), new DynamicAction("DerDerDer") };
+	public static Action[] Iz = { new DynamicAction("Iz1"),
+			new DynamicAction("Iz2"), new DynamicAction("Iz3") };
+	public static Action[] Der = { new DynamicAction("Der1"),
+			new DynamicAction("Der2"), new DynamicAction("Der3") };
 
 	private Piece[] state;
 	private int posHole;

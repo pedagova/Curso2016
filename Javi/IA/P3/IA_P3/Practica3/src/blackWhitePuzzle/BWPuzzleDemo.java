@@ -123,7 +123,7 @@ public class BWPuzzleDemo {
 			
 			Problem problem = new Problem(p, BWPuzzleFunctionFactory.getActionsFunction(),
 					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
-			Search search = new AStarSearch(new GraphSearch(), new HeuManh());
+			Search search = new AStarSearch(new GraphSearch(), new SuperHeroeHoleM());
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
 			printInstrumentation(agent.getInstrumentation());

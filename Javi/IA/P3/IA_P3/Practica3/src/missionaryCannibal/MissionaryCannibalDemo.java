@@ -143,7 +143,7 @@ public class MissionaryCannibalDemo {
 					.getActionsFunction(), MissionaryCannibalFunctionFactory
 					.getResultFunction(), new MissionaryCannibalGoalTest());
 			Search search = new AStarSearch(new GraphSearch(),
-					new Heu1());
+					new EstMov());
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
 			printInstrumentation(agent.getInstrumentation());
