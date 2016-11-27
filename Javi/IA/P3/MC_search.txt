@@ -1,0 +1,1600 @@
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 3.0
+Voraz--MCPuzzleHeuristic1: 3.0
+Voraz--MCPuzzleHeuristic2: 3.0
+A*--MCPuzzleHeuristic1: 3.0
+A*--MCPuzzleHeuristic2: 3.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 1.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 6.0
+Voraz--MCPuzzleHeuristic1: 6.0
+Voraz--MCPuzzleHeuristic2: 6.0
+A*--MCPuzzleHeuristic1: 6.0
+A*--MCPuzzleHeuristic2: 6.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 5.0
+Voraz--MCPuzzleHeuristic1: 5.0
+Voraz--MCPuzzleHeuristic2: 5.0
+A*--MCPuzzleHeuristic1: 5.0
+A*--MCPuzzleHeuristic2: 5.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 1.0
+Voraz--MCPuzzleHeuristic1: 1.0
+Voraz--MCPuzzleHeuristic2: 1.0
+A*--MCPuzzleHeuristic1: 1.0
+A*--MCPuzzleHeuristic2: 1.0
+
+
+Recursive DLS: 11.0
+Iterative DLS: 11.0
+Voraz--MCPuzzleHeuristic1: 11.0
+Voraz--MCPuzzleHeuristic2: 11.0
+A*--MCPuzzleHeuristic1: 11.0
+A*--MCPuzzleHeuristic2: 11.0
+
+
+Recursive DLS: 0.0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0.0
+Voraz--MCPuzzleHeuristic2: 0.0
+A*--MCPuzzleHeuristic1: 0.0
+A*--MCPuzzleHeuristic2: 0.0
+
+
+Recursive DLS: 0
+Iterative DLS: 0.0
+Voraz--MCPuzzleHeuristic1: 0
+Voraz--MCPuzzleHeuristic2: 0
+A*--MCPuzzleHeuristic1: 0
+A*--MCPuzzleHeuristic2: 0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 10.0
+Voraz--MCPuzzleHeuristic1: 10.0
+Voraz--MCPuzzleHeuristic2: 10.0
+A*--MCPuzzleHeuristic1: 10.0
+A*--MCPuzzleHeuristic2: 10.0
+
+
+Recursive DLS: 12.0
+Iterative DLS: 8.0
+Voraz--MCPuzzleHeuristic1: 8.0
+Voraz--MCPuzzleHeuristic2: 8.0
+A*--MCPuzzleHeuristic1: 8.0
+A*--MCPuzzleHeuristic2: 8.0
+
+

@@ -9,17 +9,17 @@ public class BWPuzzleBoard {
 	public static Action[] Der = { new DynamicAction("Der1"),
 			new DynamicAction("Der2"), new DynamicAction("Der3") };
 
-	private Piece[] state;
+	private BWPuzzlePiece[] state;
 	private int posHole;
 
 	public BWPuzzleBoard() {
-		state = new Piece[] { Piece.BLACK, Piece.BLACK, Piece.BLACK,
-				Piece.HOLE, Piece.WHITE, Piece.WHITE, Piece.WHITE };
+		state = new BWPuzzlePiece[] { BWPuzzlePiece.BLACK, BWPuzzlePiece.BLACK, BWPuzzlePiece.BLACK,
+				BWPuzzlePiece.HOLE, BWPuzzlePiece.WHITE, BWPuzzlePiece.WHITE, BWPuzzlePiece.WHITE };
 		findHole();
 	}
 
-	public BWPuzzleBoard(Piece[] state) {
-		this.state = new Piece[state.length];
+	public BWPuzzleBoard(BWPuzzlePiece[] state) {
+		this.state = new BWPuzzlePiece[state.length];
 		System.arraycopy(state, 0, this.state, 0, state.length);
 		findHole();
 	}
@@ -128,13 +128,13 @@ public class BWPuzzleBoard {
 //----------------End Other methods ----------------------
 	
 //------------Private Methods------------------------
-	public Piece[] getState() {
+	public BWPuzzlePiece[] getState() {
 		return state;
 	}
 
 	private void findHole() {
 		for (int i = 0; i < 9; i++) {
-			if (state[i].equals(Piece.HOLE)) {
+			if (state[i].equals(BWPuzzlePiece.HOLE)) {
 				posHole = i;
 				return;
 			}
@@ -145,8 +145,8 @@ public class BWPuzzleBoard {
 	//p2 -> new piece position
 	
 	private void swichPieces(int p1, int p2){
-		Piece aux = state[p1];
-		state[p1] = Piece.HOLE;
+		BWPuzzlePiece aux = state[p1];
+		state[p1] = BWPuzzlePiece.HOLE;
 		state[p2] = aux;
 	}
 //------------Private Methods------------------------

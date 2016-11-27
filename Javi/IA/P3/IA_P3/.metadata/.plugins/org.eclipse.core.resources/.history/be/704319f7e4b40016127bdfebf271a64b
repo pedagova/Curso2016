@@ -1,0 +1,36 @@
+
+Missionary Cannibal recursive DLS (3) -->
+Action[name==C]
+Action[name==C]
+Action[name==C]
+Action[name==C]
+Action[name==C]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==MM]
+Action[name==MC]
+Action[name==MM]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+pathCost : 17.0
+nodesExpanded : 3568
+
+Missionary Cannibal Iterative DLS -->
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==MM]
+Action[name==MC]
+Action[name==MM]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+pathCost : 11.0
+nodesExpanded : 14017

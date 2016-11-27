@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="aima.core.agent.Action"/>
-<fullyQualifiedTypeName name="blackWhitePuzzle.BWPuzzleBoard"/>
 <fullyQualifiedTypeName name="blackWhitePuzzle.Piece"/>
 <fullyQualifiedTypeName name="eightPuzzle.MisplacedTilleHeuristicFunction"/>
 <fullyQualifiedTypeName name="eightPuzzle.ManhattanHeuristicFunction"/>
+<fullyQualifiedTypeName name="missionaryCannibal.MCPuzzleFunctionFactory"/>
+<fullyQualifiedTypeName name="blackWhitePuzzle.BWPuzzleDemo"/>
+<fullyQualifiedTypeName name="blackWhitePuzzle.BWPuzzleBoard"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="blackWhitePuzzle.BWPuzzlePiece"/>
+<fullyQualifiedTypeName name="blackWhitePuzzle.BWPuzzleMTH"/>
+<fullyQualifiedTypeName name="missionaryCannibal.MCPuzzleBoard"/>
+<fullyQualifiedTypeName name="missionaryCannibal.MCPuzzleHeuristic1"/>
 </qualifiedTypeNameHistroy>

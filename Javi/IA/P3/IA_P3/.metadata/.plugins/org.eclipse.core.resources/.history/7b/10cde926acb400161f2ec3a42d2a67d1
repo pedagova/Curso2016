@@ -1,0 +1,22 @@
+package missionaryCannibal;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+public class MCPuzzleReportedSearchDemo extends MCPuzzleDemo{
+
+	public static void main(String[] args) throws FileNotFoundException {
+		System.setOut(new PrintStream(new FileOutputStream("MC_salida_normal.txt")));
+		System.setErr(new PrintStream(new FileOutputStream("MC_salida_error.txt")));
+		
+		missionaryCannibalDSLDemo();
+		missionaryCannibalIDLSDemo();
+		//missionaryCannibalGreedyBestFirstDemo();
+		//missionaryCannibalGreedyBestFirstManhattanDemo();
+		//missionaryCannibalAStarDemo();
+		//missionaryCannibalAStarHeu1Demo();
+		//missionaryCannibalSimulatedAnnealingDemo();
+	}
+	
+}

@@ -8,7 +8,7 @@ import aima.core.agent.Action;
 
 public class BWPuzzleDemo {
 	static BWPuzzleBoard board1 = new BWPuzzleBoard(
-			new Piece[] { Piece.BLACK, Piece.BLACK, Piece.BLACK, Piece.HOLE, Piece.WHITE, Piece.WHITE, Piece.WHITE });;
+			new BWPuzzlePiece[] { BWPuzzlePiece.BLACK, BWPuzzlePiece.BLACK, BWPuzzlePiece.BLACK, BWPuzzlePiece.HOLE, BWPuzzlePiece.WHITE, BWPuzzlePiece.WHITE, BWPuzzlePiece.WHITE });;
 
 	protected static void printInstrumentation(Properties properties) {
 		Iterator<Object> keys = properties.keySet().iterator();

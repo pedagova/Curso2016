@@ -1,0 +1,2000 @@
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 12.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 13.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 12.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 12.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 12.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 12.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 12.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 13.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 12.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 12.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 11.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 11.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 12.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 12.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 11.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 13.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 14.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 12.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 11.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 11.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 13.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 14.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 13.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 11.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 10.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 12.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 13.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 11.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 13.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 6.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 6.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 6.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 14.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 12.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 6.0
+Voraz--BWPuzzleHeuristic1: 4.0
+Voraz--BWPuzzleHeuristic2: 4.0
+A*--BWPuzzleHeuristic1: 4.0
+A*--BWPuzzleHeuristic2: 4.0
+Voraz--BWPuzzleMTH: 4.0
+A*--BWPuzzleMTH: 4.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 14.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 9.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 12.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 12.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 7.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 8.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 12.0
+Voraz--BWPuzzleHeuristic2: 16.0
+A*--BWPuzzleHeuristic1: 11.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 10.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 15.0
+Voraz--BWPuzzleHeuristic1: 13.0
+Voraz--BWPuzzleHeuristic2: 15.0
+A*--BWPuzzleHeuristic1: 13.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 10.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 5.0
+Voraz--BWPuzzleHeuristic2: 5.0
+A*--BWPuzzleHeuristic1: 5.0
+A*--BWPuzzleHeuristic2: 5.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 10.0
+Voraz--BWPuzzleHeuristic1: 8.0
+Voraz--BWPuzzleHeuristic2: 8.0
+A*--BWPuzzleHeuristic1: 8.0
+A*--BWPuzzleHeuristic2: 8.0
+Voraz--BWPuzzleMTH: 7.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 14.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 13.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 17.0
+Iterative DLS: 14.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 14.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 9.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 9.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 10.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 11.0
+Voraz--BWPuzzleMTH: 9.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 11.0
+Voraz--BWPuzzleHeuristic1: 10.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 7.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 7.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 7.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 5.0
+A*--BWPuzzleMTH: 5.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+
+Recursive DLS: 15.0
+Iterative DLS: 9.0
+Voraz--BWPuzzleHeuristic1: 6.0
+Voraz--BWPuzzleHeuristic2: 7.0
+A*--BWPuzzleHeuristic1: 6.0
+A*--BWPuzzleHeuristic2: 7.0
+Voraz--BWPuzzleMTH: 8.0
+A*--BWPuzzleMTH: 6.0
+
+
+Recursive DLS: 16.0
+Iterative DLS: 12.0
+Voraz--BWPuzzleHeuristic1: 9.0
+Voraz--BWPuzzleHeuristic2: 12.0
+A*--BWPuzzleHeuristic1: 9.0
+A*--BWPuzzleHeuristic2: 10.0
+Voraz--BWPuzzleMTH: 11.0
+A*--BWPuzzleMTH: 8.0
+
+

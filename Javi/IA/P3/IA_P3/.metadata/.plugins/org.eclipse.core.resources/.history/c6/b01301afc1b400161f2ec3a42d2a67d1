@@ -1,0 +1,132 @@
+
+BlackWhitePuzzleDemo Greedy Best First Search (BWHeuristic1)-->
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Iz2]
+Action[name==Iz2]
+Action[name==Der1]
+Action[name==Der1]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Iz2]
+Action[name==Iz3]
+Action[name==Der1]
+Action[name==Der3]
+Action[name==Iz2]
+pathCost : 13.0
+nodesExpanded : 19
+queueSize : 23
+maxQueueSize : 24
+
+BlackWhitePuzzleDemo Greedy Best First Search (BWHeuristic2)-->
+Action[name==Der2]
+Action[name==Iz3]
+Action[name==Der2]
+Action[name==Der2]
+Action[name==Iz1]
+Action[name==Iz3]
+Action[name==Iz1]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Iz3]
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Iz2]
+Action[name==Der1]
+pathCost : 15.0
+nodesExpanded : 42
+queueSize : 37
+maxQueueSize : 38
+
+BlackWhitePuzzleDemo AStar Search (BWHeuristic1)-->
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Iz2]
+Action[name==Iz2]
+Action[name==Iz2]
+Action[name==Der1]
+Action[name==Der3]
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Iz2]
+pathCost : 13.0
+nodesExpanded : 33
+queueSize : 30
+maxQueueSize : 33
+
+BlackWhitePuzzleDemo AStar Search (BWHeuristic2)-->
+Action[name==Der2]  
+Action[name==Iz3]   
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Der3]
+Action[name==Iz1]
+Action[name==Iz3]
+Action[name==Der2]
+Action[name==Iz3]
+Action[name==Der2]
+pathCost : 10.0
+nodesExpanded : 56
+queueSize : 46
+maxQueueSize : 47
+
+BlackWhitePuzzleDemo Simulated Annealing  Search -->
+Action[name==Der3]
+Action[name==Iz3]
+Action[name==Iz1]
+Action[name==Iz2]
+Action[name==Der1]
+Action[name==Iz1]
+Action[name==Der1]
+Action[name==Der3]
+Action[name==Iz1]
+Action[name==Der2]
+Action[name==Iz3]
+Action[name==Iz1]
+Action[name==Iz1]
+Action[name==Der1]
+Action[name==Der2]
+Action[name==Iz2]
+Action[name==Iz1]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Der2]
+Action[name==Iz1]
+Action[name==Der1]
+Action[name==Iz1]
+Action[name==Iz1]
+Action[name==Iz3]
+Action[name==Der3]
+Action[name==Iz2]
+Action[name==Der1]
+Action[name==Iz3]
+Action[name==Der3]
+Action[name==Der3]
+Action[name==Iz1]
+Action[name==Der1]
+Action[name==Iz3]
+Action[name==Der3]
+Action[name==Iz1]
+Action[name==Der1]
+Action[name==Iz2]
+Action[name==Iz3]
+Action[name==Der3]
+Action[name==Der2]
+Action[name==Iz1]
+Action[name==Der1]
+Action[name==Iz1]
+Action[name==Iz2]
+Action[name==Der2]
+Action[name==Der1]
+Action[name==Iz3]
+Action[name==Der2]
+Action[name==Iz1]
+Action[name==Der1]
+Search Outcome=FAILURE
+Final State=
+[ W B B W W H B ]5
+nodesExpanded : 100

@@ -1,0 +1,77 @@
+
+Missionary Cannibal Greedy Best First Search (MCPuzzleHeuristic1)-->
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==MM]
+Action[name==MC]
+Action[name==MM]
+Action[name==C]
+Action[name==CC]
+Action[name==M]
+Action[name==MC]
+pathCost : 11.0
+nodesExpanded : 21
+queueSize : 7
+maxQueueSize : 9
+
+Missionary Cannibal Greedy Best First Search (MCPuzzleHeuristic2)-->
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==MM]
+Action[name==MC]
+Action[name==MM]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+pathCost : 11.0
+nodesExpanded : 19
+queueSize : 8
+maxQueueSize : 9
+
+Missionary Cannibal AStar Search (MCPuzzleHeuristic1)-->
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==MM]
+Action[name==MC]
+Action[name==MM]
+Action[name==C]
+Action[name==CC]
+Action[name==M]
+Action[name==MC]
+pathCost : 11.0
+nodesExpanded : 22
+queueSize : 6
+maxQueueSize : 9
+
+Missionary Cannibal AStar Search (MCPuzzleHeuristic2)-->
+Action[name==CC]
+Action[name==C]
+Action[name==CC]
+Action[name==C]
+Action[name==MM]
+Action[name==MC]
+Action[name==MM]
+Action[name==C]
+Action[name==CC]
+Action[name==M]
+Action[name==MC]
+pathCost : 11.0
+nodesExpanded : 25
+queueSize : 3
+maxQueueSize : 9
+
+Missionary Cannibal Simulated Annealing  Search -->
+Action[name==MC]
+Action[name==C]
+Search Outcome=FAILURE
+Final State=
+   M    C   B   
+   2   3   L
+nodesExpanded : 100
