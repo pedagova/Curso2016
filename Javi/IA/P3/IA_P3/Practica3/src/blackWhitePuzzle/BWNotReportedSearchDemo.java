@@ -1,0 +1,61 @@
+package blackWhitePuzzle;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+import aima.core.search.framework.Problem;
+import aima.core.search.framework.Search;
+import aima.core.search.framework.SearchAgent;
+import aima.core.search.uninformed.DepthLimitedSearch;
+import aima.core.search.uninformed.IterativeDeepeningSearch;
+
+public class BWNotReportedSearchDemo extends BWPuzzleDemo{
+	public static void main(String[] args) {
+		try {
+			System.setOut(new PrintStream(new FileOutputStream("BW_not_reported_search.txt")));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			System.setErr(new PrintStream(new FileOutputStream("BW_not_reported_search.txt")));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		bwPuzzleDLSDemo();
+		bwPuzzleIDLSDemo();
+	}
+
+	private static void bwPuzzleDLSDemo(){
+		System.out.println("\nBlackWhitePuzzleDemo recursive DLS (9) -->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest(), new BWPuzzleStepCostFunction());
+			Search search = new DepthLimitedSearch(12);
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleIDLSDemo() {
+		System.out.println("\nBlackWhitePuzzleDemo Iterative DLS -->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest(), new BWPuzzleStepCostFunction());
+			Search search = new IterativeDeepeningSearch();
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

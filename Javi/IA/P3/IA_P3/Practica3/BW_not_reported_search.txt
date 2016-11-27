@@ -1,0 +1,30 @@
+
+BlackWhitePuzzleDemo recursive DLS (9) -->
+Action[name==Iz1]
+Action[name==Iz1]
+Action[name==Der3]
+Action[name==Iz1]
+Action[name==Iz1]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Iz3]
+Action[name==Iz3]
+Action[name==Der2]
+Action[name==Der3]
+Action[name==Iz2]
+pathCost : 17.0
+nodesExpanded : 647320
+
+BlackWhitePuzzleDemo Iterative DLS -->
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Der1]
+Action[name==Iz3]
+Action[name==Iz3]
+Action[name==Der2]
+Action[name==Der3]
+Action[name==Iz2]
+pathCost : 15.0
+nodesExpanded : 724476

@@ -1,0 +1,24 @@
+
+BlackWhitePuzzleDemo Greedy Best First Search (MisplacedTileHeursitic)-->
+
+BlackWhitePuzzleDemo Greedy Best First Search (ManhattanHeursitic)-->
+
+BlackWhitePuzzleDemo AStar Search (MisplacedTileHeursitic)-->
+Action[name==Der2]
+Action[name==Iz3]
+Action[name==Iz2]
+Action[name==Der3]
+Action[name==Der3]
+Action[name==Iz1]
+Action[name==Iz3]
+Action[name==Der2]
+Action[name==Iz3]
+Action[name==Der2]
+pathCost : 10.0
+nodesExpanded : 56
+queueSize : 46
+maxQueueSize : 47
+
+BlackWhitePuzzleDemo AStar Search (ManhattanHeursitic)-->
+
+BlackWhitePuzzleDemo Simulated Annealing  Search -->

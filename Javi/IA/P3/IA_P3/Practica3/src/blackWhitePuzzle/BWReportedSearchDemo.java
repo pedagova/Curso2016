@@ -1,0 +1,112 @@
+package blackWhitePuzzle;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+import aima.core.search.framework.GraphSearch;
+import aima.core.search.framework.Problem;
+import aima.core.search.framework.Search;
+import aima.core.search.framework.SearchAgent;
+import aima.core.search.informed.AStarSearch;
+import aima.core.search.informed.GreedyBestFirstSearch;
+import aima.core.search.local.SimulatedAnnealingSearch;
+
+public class BWReportedSearchDemo extends BWPuzzleDemo {
+	public static void main(String[] args) {
+		try {
+			System.setOut(new PrintStream(new FileOutputStream("BW_reported_search.txt")));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			System.setErr(new PrintStream(new FileOutputStream("BW_reported_search_error.txt")));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		bwPuzzleGreedyBestFirstDemo();
+		bwPuzzleGreedyBestFirstManhattanDemo();
+		bwPuzzleAStarDemo();
+		bwPuzzleAStarManhattanDemo();
+		bwPuzzleSimulatedAnnealingDemo();
+	}
+
+	private static void bwPuzzleGreedyBestFirstDemo() {
+		System.out.println("\nBlackWhitePuzzleDemo Greedy Best First Search (BWHeuristic1)-->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
+			Search search = new GreedyBestFirstSearch(new GraphSearch(), new BWHeuristic1());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleGreedyBestFirstManhattanDemo() {
+		System.out.println("\nBlackWhitePuzzleDemo Greedy Best First Search (BWHeuristic2)-->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
+			Search search = new GreedyBestFirstSearch(new GraphSearch(), new BWHeuristic2());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleAStarDemo() {
+		System.out.println("\nBlackWhitePuzzleDemo AStar Search (BWHeuristic1)-->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
+			Search search = new AStarSearch(new GraphSearch(), new BWHeuristic1());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static void bwPuzzleSimulatedAnnealingDemo() {
+		System.out.println("\nBlackWhitePuzzleDemo Simulated Annealing  Search -->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
+			SimulatedAnnealingSearch search = new SimulatedAnnealingSearch(new BWHeuristic2());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			System.out.println("Search Outcome=" + search.getOutcome());
+			System.out.println("Final State=\n" + search.getLastSearchState());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void bwPuzzleAStarManhattanDemo() {
+		System.out.println("\nBlackWhitePuzzleDemo AStar Search (BWHeuristic2)-->");
+		try {
+			Problem problem = new Problem(BWPuzzleDemo.board1, BWPuzzleFunctionFactory.getActionsFunction(),
+					BWPuzzleFunctionFactory.getResultFunction(), new BWPuzzleGoalTest());
+			Search search = new AStarSearch(new GraphSearch(), new BWHeuristic2());
+			SearchAgent agent = new SearchAgent(problem, search);
+			printActions(agent.getActions());
+			printInstrumentation(agent.getInstrumentation());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
