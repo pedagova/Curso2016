@@ -1,19 +1,20 @@
 (deffacts inicio
     ;; grandpa example
     ;; grandma example
-    (dd uno dos tres m)
-    (dd tres cuatro cinco m)
+    ;;(dd uno dos tres m)
+    ;;(dd tres cuatro cinco m) 
     
-    
-  
-    
-    (dd juan maria rosa m)
-    (dd juan maria pepitoGrillo h)
-    (dd juan maria luis h)
-    (dd jose laura pilar m)
-    (dd luis pilar miguel h)
-    (dd miguel isabel jaime h))
-
+    ;;(dd juan maria rosa m)
+    ;;(dd juan maria pepitoGrillo h)
+    ;;(dd juan maria luis h)
+    ;;(dd jose laura pilar m)
+    ;;(dd luis pilar miguel h)
+    ;;(dd miguel isabel jaime h))
+	(dd pedri ana david h)
+    (dd jose celia pedrito m)
+    (dd pedro pili pedri h)
+    (dd pedro pili jose h)
+)
 (defrule padre
     (dd ?x ? ?y ?)
     =>
@@ -50,29 +51,105 @@
     (assert (son ?y ?z))
     (assert (son ?x ?z)))
 
-(defrule grandpa 
-    (dd ?x ?y ?z ?)
-    (dd ?z ?z1 ?s ?)
-    =>
-    (assert (grandpa ?s ?x)))
+(defrule grandpaF
+   (padre ?x ?y) 
+    (padre ?y ?z)
+    => 
+    (assert(gandpa ?x ?z)))
 
-(defrule grandma 
-    (dd ?x ?y ?z ?)
-    (dd ?z ?z1 ?s ?)
-    =>
-    (assert (grandma ?s ?y)))
+(defrule grandpaM
+   (padre ?x ?y)
+   (madre ?y ?z) 
+    => 
+    (assert(gandpa ?x ?z)))
 
-(defrule cousin_h 
-    (dd ?x ?y ?z ?)
-    (dd ?z ?z1 ?s ?)
-    =>
-    (assert (cousin_h ?s ?y)))
+(defrule grandmaP
+   (madre ?x ?y) 
+    (padre ?y ?z)
+    => 
+    (assert(gandma ?x ?z)))
 
-(defrule cousin_m 
-    (dd ?x ?y ?z ?)
-    (dd ?z ?z1 ?s ?)
+(defrule grandmaM
+   (madre ?x ?y)
+   (madre ?y ?z) 
+    => 
+    (assert(gandma ?x ?z)))
+
+(defrule cousin1
+    (son ?p ?y)
+    (son ?t ?e)
+    (brother ?p ?t) 
     =>
-    (assert (cousin_m ?s ?y)))
+    (assert (cousinM ?y ?e)))
+(defrule cousin2
+    (son ?p ?y)
+    (daugther ?t ?e)
+    (brother ?p ?t) 
+    =>
+    (assert (cousinM ?y ?e)))
+
+(defrule cousin7
+    (son ?p ?y)
+    (daughter ?t ?e)
+    (sister ?p ?t) 
+    =>
+    (assert (cousinM ?y ?e)))
+
+(defrule cousin8
+    (son ?p ?y)
+    (son ?t ?e)
+    (sister ?p ?t) 
+    =>
+    (assert (cousinM ?y ?e)))
+
+(defrule cousin3
+    (daugther ?p ?y)
+    (son ?t ?e)
+    (brother ?p ?t) 
+    =>
+    (assert (cousinF ?y ?e)))
+
+(defrule cousin4
+    (daugther ?p ?y)
+    (daughter ?t ?e)
+    (brother ?p ?t) 
+    =>
+    (assert (cousinF ?y ?e)))
+(defrule cousin5
+    (daugther ?p ?y)
+    (son ?t ?e)
+    (sister ?p ?t) 
+    =>
+    (assert (cousinF ?y ?e)))
+
+(defrule cousin6
+    (daugther ?p ?y)
+    (daughter ?t ?e)
+    (sister ?p ?t) 
+    =>
+    (assert (cousinF ?y ?e)))
+
+(defrule ascend 
+    (padre ?x ?y)
+    =>
+    (assert (ascend ?x ?y)))
+(defrule ascendM 
+    (madre ?x ?y)
+    =>
+    (assert (ascend ?x ?y)))
+(defrule ascendA 
+    (ascend ?x ?y)
+    (padre ?p ?x)
+    =>
+    (assert (ascend ?p ?y))) 
+        
+(defrule ascendAM
+	(ascend ?x ?y)
+    (madre ?m ?x)
+     =>
+    (assert (ascend ?m ?y)))
+
+
 (reset)
 (run)
 (facts)
