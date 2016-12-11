@@ -1,1 +1,0 @@
-(printout t "Hola mundo" crlf) 
