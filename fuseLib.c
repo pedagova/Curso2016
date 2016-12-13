@@ -17,99 +17,98 @@
  * @param newSize new size for the inode
  * @return int
  **/
-int resizeNode(uint64_t idxNode, size_t newSize) {
-	NodeStruct *node = myFileSystem.nodes[idxNode];
-	char block[BLOCK_SIZE_BYTES];
-	int i, diff = newSize - node->fileSize;
+int resizeNode(uint64_t idxNode, size_t newSize)
+{
+    NodeStruct *node = myFileSystem.nodes[idxNode];
+    char block[BLOCK_SIZE_BYTES];
+    int i, diff = newSize - node->fileSize;
 
-	if(!diff)
-		return 0;
+    if(!diff)
+        return 0;
 
-	memset(block, 0, sizeof(char)*BLOCK_SIZE_BYTES);
+    memset(block, 0, sizeof(char)*BLOCK_SIZE_BYTES);
 
-	/// File size increases
-	if(diff > 0) {
+    /// File size increases
+    if(diff > 0) {
 
-		/// Delete the extra conent of the last block if it exists and is not full
-		if(node->numBlocks && node->fileSize % BLOCK_SIZE_BYTES) {
-			int currentBlock = node->blocks[node->numBlocks - 1];
-			if((lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-			        (read(myFileSystem.fdVirtualDisk, &block, BLOCK_SIZE_BYTES) == -1)) {
-				perror("Failed lseek/read in resizeNode");
-				return -EIO;
-			}
-			int offBlock = node->fileSize % BLOCK_SIZE_BYTES;
-			int bytes2Write = (diff > (BLOCK_SIZE_BYTES - offBlock)) ? BLOCK_SIZE_BYTES - offBlock : diff;
-			for(i = 0; i < bytes2Write; i++) {
-				block[offBlock++] = 0;
-			}
+        /// Delete the extra conent of the last block if it exists and is not full
+        if(node->numBlocks && node->fileSize % BLOCK_SIZE_BYTES) {
+            int currentBlock = node->blocks[node->numBlocks - 1];
 
-			if((lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-			        (write(myFileSystem.fdVirtualDisk, &block, BLOCK_SIZE_BYTES) == -1)) {
-				perror("Failed lseek/write in resizeNode");
-				return -EIO;
-			}
-		}
+            if( readBlock(&myFileSystem, currentBlock, &block)==-1 ) {
+                fprintf(stderr,"Error reading block in resizeNode\n");
+                return -EIO;
+            }
 
-		/// File size in blocks after the increment
-		int newBlocks = (newSize + BLOCK_SIZE_BYTES - 1) / BLOCK_SIZE_BYTES - node->numBlocks;
-		if(newBlocks) {
-			memset(block, 0, sizeof(char)*BLOCK_SIZE_BYTES);
+            int offsetBlock = node->fileSize % BLOCK_SIZE_BYTES;
+            int bytes2Write = (diff > (BLOCK_SIZE_BYTES - offsetBlock)) ? BLOCK_SIZE_BYTES - offsetBlock : diff;
+            for(i = 0; i < bytes2Write; i++) {
+                block[offsetBlock++] = 0;
+            }
 
-			// We check that there is enough space
-			if(newBlocks > myFileSystem.superBlock.numOfFreeBlocks)
-				return -ENOSPC;
+            if( writeBlock(&myFileSystem, currentBlock, &block)==-1 ) {
+                fprintf(stderr,"Error writing block in resizeNode\n");
+                return -EIO;
+            }
+        }
 
-			myFileSystem.superBlock.numOfFreeBlocks -= newBlocks;
-			int currentBlock = node->numBlocks;
-			node->numBlocks += newBlocks;
+        /// File size in blocks after the increment
+        int newBlocks = (newSize + BLOCK_SIZE_BYTES - 1) / BLOCK_SIZE_BYTES - node->numBlocks;
+        if(newBlocks) {
+            memset(block, 0, sizeof(char)*BLOCK_SIZE_BYTES);
 
-			for(i = 0; currentBlock != node->numBlocks; i++) {
-				if(myFileSystem.bitMap[i] == 0) {
-					myFileSystem.bitMap[i] = 1;
-					node->blocks[currentBlock] = i;
-					currentBlock++;
-					// Clean disk (necessary for truncate)
-					if((lseek(myFileSystem.fdVirtualDisk, i * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-					        (write(myFileSystem.fdVirtualDisk, &block, BLOCK_SIZE_BYTES) == -1)) {
-						perror("Failed lseek/write in resizeNode");
-						return -EIO;
-					}
-				}
-			}
-		}
-		node->fileSize += diff;
+            // We check that there is enough space
+            if(newBlocks > myFileSystem.superBlock.numOfFreeBlocks)
+                return -ENOSPC;
 
-	}
-	/// File decreases
-	else {
-		// File size in blocks after truncation
-		int numBlocks = (newSize + BLOCK_SIZE_BYTES - 1) / BLOCK_SIZE_BYTES;
-		myFileSystem.superBlock.numOfFreeBlocks += (node->numBlocks - numBlocks);
+            myFileSystem.superBlock.numOfFreeBlocks -= newBlocks;
+            int currentBlock = node->numBlocks;
+            node->numBlocks += newBlocks;
 
-		for(i = node->numBlocks; i > numBlocks; i--) {
-			int nBloque = node->blocks[i - 1];
-			myFileSystem.bitMap[nBloque] = 0;
-			// Clean disk (it is not really necessary)
-			if((lseek(myFileSystem.fdVirtualDisk, nBloque * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-			        (write(myFileSystem.fdVirtualDisk, &block, BLOCK_SIZE_BYTES) == -1)) {
-				perror("Failed lseek/write in resizeNode");
-				return -EIO;
-			}
-		}
-		node->numBlocks = numBlocks;
-		node->fileSize += diff;
-	}
-	node->modificationTime = time(NULL);
+            for(i = 0; currentBlock != node->numBlocks; i++) {
+                if(myFileSystem.bitMap[i] == 0) {
+                    myFileSystem.bitMap[i] = 1;
+                    node->blocks[currentBlock] = i;
+                    currentBlock++;
+                    // Clean disk (necessary for truncate)
+                    if( writeBlock(&myFileSystem, i, &block)==-1 ) {
+                        fprintf(stderr,"Error writing block in resizeNode\n");
+                        return -EIO;
+                    }
+                }
+            }
+        }
+        node->fileSize += diff;
 
-	sync();
-	
-	/// Update all the information in the backup file
-	updateSuperBlock(&myFileSystem);
-	updateBitmap(&myFileSystem);
-	updateNode(&myFileSystem, idxNode, node);
+    }
+    /// File decreases
+    else {
+        // File size in blocks after truncation
+        int numBlocks = (newSize + BLOCK_SIZE_BYTES - 1) / BLOCK_SIZE_BYTES;
+        myFileSystem.superBlock.numOfFreeBlocks += (node->numBlocks - numBlocks);
 
-	return 0;
+        for(i = node->numBlocks; i > numBlocks; i--) {
+            int nBloque = node->blocks[i - 1];
+            myFileSystem.bitMap[nBloque] = 0;
+            // Clean disk (it is not really necessary)
+            if( writeBlock(&myFileSystem, nBloque, &block)==-1 ) {
+                fprintf(stderr,"Error writing block in resizeNode\n");
+                return -EIO;
+            }
+        }
+        node->numBlocks = numBlocks;
+        node->fileSize += diff;
+    }
+    node->modificationTime = time(NULL);
+
+    sync();
+
+    /// Update all the information in the backup file
+    updateSuperBlock(&myFileSystem);
+    updateBitmap(&myFileSystem);
+    updateNode(&myFileSystem, idxNode, node);
+
+    return 0;
 }
 
 /**
@@ -119,24 +118,25 @@ int resizeNode(uint64_t idxNode, size_t newSize) {
  * @param str output with the access mode in string format
  * @return void
  **/
-void mode_string(mode_t mode, char *str) {
-	str[0] = mode & S_IRUSR ? 'r' : '-';
-	str[1] = mode & S_IWUSR ? 'w' : '-';
-	str[2] = mode & S_IXUSR ? 'x' : '-';
-	str[3] = mode & S_IRGRP ? 'r' : '-';
-	str[4] = mode & S_IWGRP ? 'w' : '-';
-	str[5] = mode & S_IXGRP ? 'x' : '-';
-	str[6] = mode & S_IROTH ? 'r' : '-';
-	str[7] = mode & S_IWOTH ? 'w' : '-';
-	str[8] = mode & S_IXOTH ? 'x' : '-';
-	str[9] = '\0';
+void mode_string(mode_t mode, char *str)
+{
+    str[0] = mode & S_IRUSR ? 'r' : '-';
+    str[1] = mode & S_IWUSR ? 'w' : '-';
+    str[2] = mode & S_IXUSR ? 'x' : '-';
+    str[3] = mode & S_IRGRP ? 'r' : '-';
+    str[4] = mode & S_IWGRP ? 'w' : '-';
+    str[5] = mode & S_IXGRP ? 'x' : '-';
+    str[6] = mode & S_IROTH ? 'r' : '-';
+    str[7] = mode & S_IWOTH ? 'w' : '-';
+    str[8] = mode & S_IXOTH ? 'x' : '-';
+    str[9] = '\0';
 }
 
 /**
  * @brief Obtains the file attributes of a file just with the filename
- * 
+ *
  * Help from FUSE:
- * 
+ *
  * The 'st_dev' and 'st_blksize' fields are ignored. The 'st_ino' field is ignored except if the 'use_ino' mount option is given.
  *
  *		struct stat {
@@ -159,44 +159,45 @@ void mode_string(mode_t mode, char *str) {
  * @param stbuf file attributes
  * @return 0 on success and <0 on error
  **/
-static int my_getattr(const char *path, struct stat *stbuf) {
-	NodeStruct *node;
-	int idxDir;
+static int my_getattr(const char *path, struct stat *stbuf)
+{
+    NodeStruct *node;
+    int idxDir;
 
-	fprintf(stderr, "--->>>my_getattr: path %s\n", path);
+    fprintf(stderr, "--->>>my_getattr: path %s\n", path);
 
-	memset(stbuf, 0, sizeof(struct stat));
+    memset(stbuf, 0, sizeof(struct stat));
 
-	/// Directory attributes
-	if(strcmp(path, "/") == 0) {
-		stbuf->st_mode = S_IFDIR | 0755;
-		stbuf->st_nlink = 2;
-		stbuf->st_uid = getuid();
-		stbuf->st_gid = getgid();
-		stbuf->st_mtime = stbuf->st_ctime = myFileSystem.superBlock.creationTime;
-		return 0;
-	}
+    /// Directory attributes
+    if(strcmp(path, "/") == 0) {
+        stbuf->st_mode = S_IFDIR | 0755;
+        stbuf->st_nlink = 2;
+        stbuf->st_uid = getuid();
+        stbuf->st_gid = getgid();
+        stbuf->st_mtime = stbuf->st_ctime = myFileSystem.superBlock.creationTime;
+        return 0;
+    }
 
-	/// Rest of the world
-	if((idxDir = findFileByName(&myFileSystem, (char *)path + 1)) != -1) {
-		node = myFileSystem.nodes[myFileSystem.directory.files[idxDir].nodeIdx];
-		stbuf->st_size = node->fileSize;
-		stbuf->st_mode = S_IFREG | 0644;
-		stbuf->st_nlink = 1;
-		stbuf->st_uid = getuid();
-		stbuf->st_gid = getgid();
-		stbuf->st_mtime = stbuf->st_ctime = node->modificationTime;
-		return 0;
-	}
+    /// Rest of the world
+    if((idxDir = findFileByName(&myFileSystem, (char *)path + 1)) != -1) {
+        node = myFileSystem.nodes[myFileSystem.directory.files[idxDir].nodeIdx];
+        stbuf->st_size = node->fileSize;
+        stbuf->st_mode = S_IFREG | 0644;
+        stbuf->st_nlink = 1;
+        stbuf->st_uid = getuid();
+        stbuf->st_gid = getgid();
+        stbuf->st_mtime = stbuf->st_ctime = node->modificationTime;
+        return 0;
+    }
 
-	return -ENOENT;
+    return -ENOENT;
 }
 
 /**
  * @brief Reads the content of the root directory
  *
  * Help from FUSE:
- * 
+ *
  * The filesystem may choose between two modes of operation:
  *
  * 1) The readdir implementation ignores the offset parameter, and passes zero to the filler function's offset.
@@ -215,7 +216,7 @@ static int my_getattr(const char *path, struct stat *stbuf) {
  *		-stat: file attributes, can be NULL
  *		-off: offset of the next entry or zero
  *	*Returns 1 if buffer is full, zero otherwise
- * 
+ *
  * @param path path to the root folder
  * @param buf buffer where all the forder entries will be stored
  * @param filler FUSE funtion used to fill the buffer
@@ -223,32 +224,33 @@ static int my_getattr(const char *path, struct stat *stbuf) {
  * @param fi FUSE structure associated to the directory
  * @return 0 on success and <0 on error
  **/
-static int my_readdir(const char *path, void *buf, fuse_fill_dir_t filler,  off_t offset, struct fuse_file_info *fi) {
-	int i;
+static int my_readdir(const char *path, void *buf, fuse_fill_dir_t filler,  off_t offset, struct fuse_file_info *fi)
+{
+    int i;
 
-	fprintf(stderr, "--->>>my_readdir: path %s, offset %jd\n", path, (intmax_t)offset);
+    fprintf(stderr, "--->>>my_readdir: path %s, offset %jd\n", path, (intmax_t)offset);
 
-	if(strcmp(path, "/") != 0)
-		return -ENOENT;
+    if(strcmp(path, "/") != 0)
+        return -ENOENT;
 
-	filler(buf, ".", NULL, 0);
-	filler(buf, "..", NULL, 0);
+    filler(buf, ".", NULL, 0);
+    filler(buf, "..", NULL, 0);
 
-	for(i = 0; i < MAX_FILES_PER_DIRECTORY; i++) {
-		if(!(myFileSystem.directory.files[i].freeFile)) {
-			if(filler(buf, myFileSystem.directory.files[i].fileName, NULL, 0) == 1)
-				return -ENOMEM;
-		}
-	}
+    for(i = 0; i < MAX_FILES_PER_DIRECTORY; i++) {
+        if(!(myFileSystem.directory.files[i].freeFile)) {
+            if(filler(buf, myFileSystem.directory.files[i].fileName, NULL, 0) == 1)
+                return -ENOMEM;
+        }
+    }
 
-	return 0;
+    return 0;
 }
 
 /**
  * @brief File opening
  *
  * Help from FUSE:
- * 
+ *
  * No creation (O_CREAT, O_EXCL) and by default also no truncation (O_TRUNC) flags will be passed to open().
  * If an application specifies O_TRUNC, fuse first calls truncate() and then open().
  *
@@ -270,25 +272,26 @@ static int my_readdir(const char *path, void *buf, fuse_fill_dir_t filler,  off_
  *		uint64_t 		lock_owner			Lock owner id.
  *		uint32_t 		poll_events			Requested poll events.
  *	}
- * 
+ *
  * @param path path to the root folder
  * @param fi FUSE structure associated to the file opened
  * @return 0 on success and <0 on error
  **/
-static int my_open(const char *path, struct fuse_file_info *fi) {
-	int idxDir;
+static int my_open(const char *path, struct fuse_file_info *fi)
+{
+    int idxDir;
 
-	fprintf(stderr, "--->>>my_open: path %s, flags %d, %"PRIu64"\n", path, fi->flags, fi->fh);
+    fprintf(stderr, "--->>>my_open: path %s, flags %d, %"PRIu64"\n", path, fi->flags, fi->fh);
 
-	//if(findFileByName(path, &idxNodoI)){
-	if((idxDir = findFileByName(&myFileSystem, (char *)path + 1)) == -1) {
-		return -ENOENT;
-	}
+    //if(findFileByName(path, &idxnodeI)){
+    if((idxDir = findFileByName(&myFileSystem, (char *)path + 1)) == -1) {
+        return -ENOENT;
+    }
 
-	// Save the inode number in file handler to be used in the following calls
-	fi->fh = myFileSystem.directory.files[idxDir].nodeIdx;
+    // Save the inode number in file handler to be used in the following calls
+    fi->fh = myFileSystem.directory.files[idxDir].nodeIdx;
 
-	return 0;
+    return 0;
 }
 
 
@@ -298,7 +301,7 @@ static int my_open(const char *path, struct fuse_file_info *fi) {
  * Help from FUSE
  *
  * Write should return exactly the number of bytes requested except on error.
- * 
+ *
  * @param path file path
  * @param buf buffer where we have data to write
  * @param size quantity of bytes to write
@@ -306,144 +309,145 @@ static int my_open(const char *path, struct fuse_file_info *fi) {
  * @param fi FUSE structure linked to the opened file
  * @return 0 on success and <0 on error
  **/
-static int my_write(const char *path, const char *buf, size_t size, off_t offset, struct fuse_file_info *fi) {
-	char buffer[BLOCK_SIZE_BYTES];
-	int bytes2Write = size, totalWrite = 0;
-	NodeStruct *node = myFileSystem.nodes[fi->fh];
+static int my_write(const char *path, const char *buf, size_t size, off_t offset, struct fuse_file_info *fi)
+{
+    char buffer[BLOCK_SIZE_BYTES];
+    int bytes2Write = size, totalWrite = 0;
+    NodeStruct *node = myFileSystem.nodes[fi->fh];
 
-	fprintf(stderr, "--->>>my_write: path %s, size %zu, offset %jd, fh %"PRIu64"\n", path, size, (intmax_t)offset, fi->fh);
+    fprintf(stderr, "--->>>my_write: path %s, size %zu, offset %jd, fh %"PRIu64"\n", path, size, (intmax_t)offset, fi->fh);
 
-	// Increase the file size if it is needed
-	if(resizeNode(fi->fh, size + offset) < 0)
-		return -EIO;
+    // Increase the file size if it is needed
+    if(resizeNode(fi->fh, size + offset) < 0)
+        return -EIO;
 
-	// Write data
-	while(bytes2Write) {
-		int i;
-		int currentBlock, offBloque;
-		currentBlock = node->blocks[offset / BLOCK_SIZE_BYTES];
-		offBloque = offset % BLOCK_SIZE_BYTES;
+    // Write data
+    while(bytes2Write) {
+        int i;
+        int currentBlock, offsetBlock;
+        currentBlock = node->blocks[offset / BLOCK_SIZE_BYTES];
+        offsetBlock = offset % BLOCK_SIZE_BYTES;
 
-		if((lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-		        (read(myFileSystem.fdVirtualDisk, &buffer, BLOCK_SIZE_BYTES) == -1)) {
-			perror("Failed lseek/read in my_write");
-			return -EIO;
-		}
+        if( readBlock(&myFileSystem, currentBlock, &buffer)==-1 ) {
+            fprintf(stderr,"Error reading blocks in my_write\n");
+            return -EIO;
+        }
 
-		for(i = offBloque; (i < BLOCK_SIZE_BYTES) && (totalWrite < size); i++) {
-			buffer[i] = buf[totalWrite++];
-		}
+        for(i = offsetBlock; (i < BLOCK_SIZE_BYTES) && (totalWrite < size); i++) {
+            buffer[i] = buf[totalWrite++];
+        }
 
-		if((lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-		        (write(myFileSystem.fdVirtualDisk, &buffer, BLOCK_SIZE_BYTES) == -1)) {
-			perror("Failed lseek/write in my_write");
-			return -EIO;
-		}
+        if( writeBlock(&myFileSystem, currentBlock, &buffer)==-1 ) {
+            fprintf(stderr,"Error writing block in my_write\n");
+            return -EIO;
+        }
 
-		// Discont the written stuff
-		bytes2Write -= (i - offBloque);
-		offset += i;
-	}
-	sync();
-	
-	node->modificationTime = time(NULL);
-	updateSuperBlock(&myFileSystem);
-	updateBitmap(&myFileSystem);
-	updateNode(&myFileSystem, fi->fh, node);
+        // Discount the written stuff
+        bytes2Write -= (i - offsetBlock);
+        offset += (i - offsetBlock);
+    }
+    sync();
 
-	return size;
+    node->modificationTime = time(NULL);
+    updateSuperBlock(&myFileSystem);
+    updateBitmap(&myFileSystem);
+    updateNode(&myFileSystem, fi->fh, node);
+
+    return size;
 }
 
 /**
  * @brief Close the file
  *
  * Help from FUSE:
- * 
+ *
  * Release is called when there are no more references to an open file: all file descriptors are
  * closed and all memory mappings are unmapped.
  *
  * For every open() call there will be exactly one release() call with the same flags and file descriptor.
  * It is possible to have a file opened more than once, in which case only the last release will mean,
  * that no more reads/writes will happen on the file. The return value of release is ignored.
- * 
+ *
  * @param path file path
  * @param fi FUSE structure linked to the opened file
  * @return 0
  **/
-static int my_release(const char *path, struct fuse_file_info *fi) {
-	(void) path;
-	(void) fi;
+static int my_release(const char *path, struct fuse_file_info *fi)
+{
+    (void) path;
+    (void) fi;
 
-	fprintf(stderr, "--->>>my_release: path %s\n", path);
+    fprintf(stderr, "--->>>my_release: path %s\n", path);
 
-	return 0;
+    return 0;
 }
 
 /**
  * @brief Create a file
  *
  * Help from FUSE:
- * 
+ *
  * This is called for creation of all non-directory, non-symlink nodes.
  * If the filesystem defines a create() method, then for regular files that will be called instead.
- * 
+ *
  * @param path file path
  * @param mode creation mode
  * @param device device where the device will be created (contains both major and minor numbers)
  * @return 0 on success and <0 on error
  **/
-static int my_mknod(const char *path, mode_t mode, dev_t device) {
-	char modebuf[10];
+static int my_mknod(const char *path, mode_t mode, dev_t device)
+{
+    char modebuf[10];
 
-	mode_string(mode, modebuf);
-	fprintf(stderr, "--->>>my_mknod: path %s, mode %s, major %d, minor %d\n", path, modebuf, (int)MAJOR(device), (int)MINOR(device));
+    mode_string(mode, modebuf);
+    fprintf(stderr, "--->>>my_mknod: path %s, mode %s, major %d, minor %d\n", path, modebuf, (int)MAJOR(device), (int)MINOR(device));
 
-	// We check that the length of the file name is correct
-	if(strlen(path + 1) > myFileSystem.superBlock.maxLenFileName) {
-		return -ENAMETOOLONG;
-	}
+    // We check that the length of the file name is correct
+    if(strlen(path + 1) > myFileSystem.superBlock.maxLenFileName) {
+        return -ENAMETOOLONG;
+    }
 
-	// There exist an available inode
-	if(myFileSystem.numFreeNodes <= 0) {
-		return -ENOSPC;
-	}
+    // There exist an available inode
+    if(myFileSystem.numFreeNodes <= 0) {
+        return -ENOSPC;
+    }
 
-	// There is still space for a new file
-	if(myFileSystem.directory.numFiles >= MAX_FILES_PER_DIRECTORY) {
-		return -ENOSPC;
-	}
-	// The directory exists
-	if(findFileByName(&myFileSystem, (char *)path + 1) != -1)
-		return -EEXIST;
+    // There is still space for a new file
+    if(myFileSystem.directory.numFiles >= MAX_FILES_PER_DIRECTORY) {
+        return -ENOSPC;
+    }
+    // The directory exists
+    if(findFileByName(&myFileSystem, (char *)path + 1) != -1)
+        return -EEXIST;
 
-	/// Update all the information in the backup file:
-	int idxNodoI, idxDir;
-	if((idxNodoI = findFreeNode(&myFileSystem)) == -1 || (idxDir = findFreeFile(&myFileSystem)) == -1) {
-		return -ENOSPC;
-	}
+    /// Update all the information in the backup file:
+    int idxnodeI, idxDir;
+    if((idxnodeI = findFreeNode(&myFileSystem)) == -1 || (idxDir = findFreeFile(&myFileSystem)) == -1) {
+        return -ENOSPC;
+    }
 
-	// Update root folder
-	myFileSystem.directory.files[idxDir].freeFile = false;
-	myFileSystem.directory.numFiles++;
-	strcpy(myFileSystem.directory.files[idxDir].fileName, path + 1);
-	myFileSystem.directory.files[idxDir].nodeIdx = idxNodoI;
-	myFileSystem.numFreeNodes--;
+    // Update root folder
+    myFileSystem.directory.files[idxDir].freeFile = false;
+    myFileSystem.directory.numFiles++;
+    strcpy(myFileSystem.directory.files[idxDir].fileName, path + 1);
+    myFileSystem.directory.files[idxDir].nodeIdx = idxnodeI;
+    myFileSystem.numFreeNodes--;
 
-	// Fill the fields of the new inode
-	if(myFileSystem.nodes[idxNodoI] == NULL)
-		myFileSystem.nodes[idxNodoI] = malloc(sizeof(NodeStruct));
+    // Fill the fields of the new inode
+    if(myFileSystem.nodes[idxnodeI] == NULL)
+        myFileSystem.nodes[idxnodeI] = malloc(sizeof(NodeStruct));
 
-	myFileSystem.nodes[idxNodoI]->fileSize = 0;
-	myFileSystem.nodes[idxNodoI]->numBlocks = 0;
-	myFileSystem.nodes[idxNodoI]->modificationTime = time(NULL);
-	myFileSystem.nodes[idxNodoI]->freeNode = false;
+    myFileSystem.nodes[idxnodeI]->fileSize = 0;
+    myFileSystem.nodes[idxnodeI]->numBlocks = 0;
+    myFileSystem.nodes[idxnodeI]->modificationTime = time(NULL);
+    myFileSystem.nodes[idxnodeI]->freeNode = false;
 
-	reserveBlocksForNodes(&myFileSystem, myFileSystem.nodes[idxNodoI]->blocks, 0);
+    reserveBlocksForNodes(&myFileSystem, myFileSystem.nodes[idxnodeI]->blocks, 0);
 
-	updateDirectory(&myFileSystem);
-	updateNode(&myFileSystem, idxNodoI, myFileSystem.nodes[idxNodoI]);
+    updateDirectory(&myFileSystem);
+    updateNode(&myFileSystem, idxnodeI, myFileSystem.nodes[idxnodeI]);
 
-	return 0;
+    return 0;
 }
 
 /**
@@ -453,150 +457,111 @@ static int my_mknod(const char *path, mode_t mode, dev_t device) {
  * @param size new size
  * @return 0 on success and <0 on error
  **/
-static int my_truncate(const char *path, off_t size) {
-	int idxDir;
+static int my_truncate(const char *path, off_t size)
+{
+    int idxDir;
 
-	fprintf(stderr, "--->>>my_truncate: path %s, size %jd\n", path, size);
+    fprintf(stderr, "--->>>my_truncate: path %s, size %jd\n", path, size);
 
-	if((idxDir = findFileByName(&myFileSystem, (char *)path + 1)) == -1) {
-		return -ENOENT;
-	}
+    if((idxDir = findFileByName(&myFileSystem, (char *)path + 1)) == -1) {
+        return -ENOENT;
+    }
 
-	// Modify the size
-	if(resizeNode(myFileSystem.directory.files[idxDir].nodeIdx, size) < 0)
-		return -EIO;
+    // Modify the size
+    if(resizeNode(myFileSystem.directory.files[idxDir].nodeIdx, size) < 0)
+        return -EIO;
 
-	return 0;
-}
-/*
-1-BORRAR 
-2-LIBERAR EL I-NODO (actualizar freeNodes,mapa bit en SF)
-3-LIBERAR LOS BLOQUES(cambiar superbloque: tamaño total, bloques libres).
-4-ACTUALIZAR STRUCT DIRECTORIO (freeFIle, 
-
-
-*/
-
-static int my_delete(const char *fileName){
-//Buscamos entre los ficheros del directorio el fichero a borrar.
-//Si no existe, error. En caso contrario, procedemos: NumFiles-=1, freeFile [x] =True. 
-
-//Buscamos el índice del fichero.
-int i=findFileByName(&myFileSystem, &fileName);
-
-	if(i==-1){
-		//NOTIFICAR ERROR.
-	}else{
-		int j =myFileSystem.directory.files[i].nodeIdx;
-		myFileSystem.directory.files[i].freeFile=true; //MIRAR SI ESTÁ BIEN
-		myFileSystem.directory.numFiles=myFileSystem.directory.numFiles-1;
-		
-		//En j tenemos el índice del i-nodo del fichero.
-		
-		//Ahora, borramos el i-nodo.
-		
-		myFileSystem.nodes[j]->freeNode=true;
-		myFileSystem.numFreeNodes=myFileSystem.numFreeNodes + 1;
-		
-		//Actualizamos el bitmap
-		
-		int z;
-		for(z=0; z<myFileSystem.nodes[j]->numBlocks; z++){
-			myFileSystem.bitMap[myFileSystem.nodes[j]->blocks[z]]=0;		
-		}
-
-		//Actualizamos en SuperBlock
-
-		myFileSystem.superBlock.numOfFreeBlocks = myFileSystem.superBlock.numOfFreeBlocks + myFileSystem.nodes[j]->numBlocks;
-	}
+    return 0;
 }
 
 
-int my_read(const char *path, char *buf, size_t size, off_t offset, struct fuse_file_info *fi){
-	char buffer[BLOCK_SIZE_BYTES];
-	int bytes2Read = size, totalRead= 0;	        			
-	NodeStruct *node = myFileSystem.nodes[fi->fh]; //Nodos asociados al fichero a leer.
-	int tamanioFichero=node->fileSize;
-	fprintf(stderr, "--->>>my_read: path %s, size %zu, offset %jd, fh %"PRIu64"\n", path, size, (intmax_t)offset, fi->fh);
+static int my_unlink(const char *path)
+{ 
 
-	// Read data
-	while(bytes2Read!=0 && (tamanioFichero > totalRead) ) {
-		int i;
-		int currentBlock, offBloque;
-		currentBlock = node->blocks[offset / BLOCK_SIZE_BYTES];		//Bloque en el que estamos. Se obtiene a partir de 
-		offBloque = offset % BLOCK_SIZE_BYTES;				//el offset.
-										
+    int id_nodeI;
+    int nodeI;
+    fprintf(stderr, "path_unlink: %s\n", path);
 
-		/*if((lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-		        (read(myFileSystem.fdVirtualDisk, &buffer, BLOCK_SIZE_BYTES) == -1)) {
-			perror("Failed lseek/read in my_write");
-				return -EIO;
-		}*/
-	
-		if(lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES + offset, SEEK_SET)){	
-			return -EIO;
-		}
-		
-		int actRead = read(myFileSystem.fdVirtualDisk, &buffer, BLOCK_SIZE_BYTES);		
 
-		if(actRead == -1){
-			return -EIO;
-		}
+    if((id_nodeI = findFileByName(&myFileSystem, (char *)path + 1)) == -1) {
+        return -ENOENT;
+    }
+    nodeI = myFileSystem.directory.files[id_nodeI].nodeIdx;
 
-		for(i = offBloque; (i < BLOCK_SIZE_BYTES) && (totalRead < size); i++) {
-			buf[totalRead] = buffer[i];
-			totalRead++;
-		}
-		
-		/*
-		if(actRead < BLOCK_SIZE_BYTES - offset){
-			break;
-		}
-		*/
+    int i = 0;
+    int indiceBloque;
+    int tamB = myFileSystem.nodes[nodeI]->numBlocks;
+    
 
-		/*
-		if((lseek(myFileSystem.fdVirtualDisk, currentBlock * BLOCK_SIZE_BYTES, SEEK_SET) == (off_t) - 1) ||
-		        (write(myFileSystem.fdVirtualDisk, &buffer, BLOCK_SIZE_BYTES) == -1)) {
-			perror("Failed lseek/write in my_write");
-			return -EIO;
-		}*/
+    for (i = 0; i < tamB; ++i) {
 
-		// Discont the written stuff
-		bytes2Read -= (i - offBloque);
-		offset += i;
-	}
+        indiceBloque = myFileSystem.nodes[nodeI]->blocks[i];
+        myFileSystem.bitMap[indiceBloque] = 0;
+    }
 
-	int j;
-	if(totalRead != bytes2Read){
-		for(j = totalRead; j < bytes2Read; j++){
-			buf[j] = '0';
-		}
-	}
+    myFileSystem.nodes[nodeI]->freeNode = true;
+    myFileSystem.nodes[nodeI]->numBlocks = 0;
+    myFileSystem.nodes[nodeI]->fileSize = 0;
 
-	sync();
-	
-	/*
-	node->modificationTime = time(NULL);
-	updateSuperBlock(&myFileSystem);
-	updateBitmap(&myFileSystem);
-	updateNode(&myFileSystem, fi->fh, node);
-	*/
+    myFileSystem.superBlock.numOfFreeBlocks = myQuota(&myFileSystem);
+    myFileSystem.directory.files[id_nodeI].freeFile = true;
 
-	return size;
+    myFileSystem.numFreeNodes++;
+    myFileSystem.directory.numFiles--;
+
+    updateSuperBlock(&myFileSystem);
+    updateDirectory(&myFileSystem);
+    updateBitmap(&myFileSystem);
+    updateNode(&myFileSystem, nodeI, myFileSystem.nodes[nodeI]);
+    sync();
+
+    return 0;
+}
+
+
+
+static int my_read(const char *path, char *mem, size_t size, off_t offset, struct fuse_file_info *fi)
+{
+    int  allReading = 0;
+    int bytesR = size;
+    char buffer[BLOCK_SIZE_BYTES];
+    NodeStruct *node = myFileSystem.nodes[fi->fh];
+        
+    fprintf(stderr, "path_write: %s, size %zu, offset %jd, fh %"PRIu64"\n", path, size, (intmax_t)offset, fi->fh);
+    
+    while(bytesR) {
+        int i;
+        int currentBlock; 
+        int offsetBlock;
+        currentBlock = node->blocks[offset / BLOCK_SIZE_BYTES];
+        offsetBlock = offset % BLOCK_SIZE_BYTES;
+
+        if(readBlock(&myFileSystem, currentBlock, &buffer) == -1) {
+            fprintf(stderr,"Error\n");
+            return -EIO;
+        }
+
+        for(i = offsetBlock; (i < BLOCK_SIZE_BYTES) && (allReading < size); i++) {
+            mem[allReading] = buffer[i];
+            allReading++;
+        }
+        offset = offset + (i - offsetBlock);
+        bytesR = bytesR - (i - offsetBlock);
+        
+    }
+    
+    return allReading;
 }
 
 struct fuse_operations myFS_operations = {
-	//READ
-	.read		=my_read,
-	//DELETE
-	.unlink		=my_delete,
-	
-	.getattr	= my_getattr,					// Obtain attributes from a file
-	.readdir	= my_readdir,					// Read directory entries
-	.truncate	= my_truncate,					// Modify the size of a file
-	.open		= my_open,						// Oeen a file
-	.write		= my_write,						// Write data into a file already opened
-	.release	= my_release,					// Close an opened file
-	.mknod		= my_mknod,						// Create a new file
+    .getattr	= my_getattr,					
+    .readdir	= my_readdir,					
+    .truncate	= my_truncate,					
+    .open		= my_open,						
+    .write		= my_write,						
+    .release	= my_release,					
+    .mknod		= my_mknod,						
+    .unlink     = my_unlink,                       
+    .read       = my_read,                      
 };
 
