@@ -1,0 +1,6 @@
+Para la parte creativa hemos desarrollado un minijuego para dos jugadores donde ambos compiten por alcanzar la máxima puntuación pulsando repetidas veces su tecla mientras el led Num esté encendido, de tal manera que cuando pulsen su tecla estando éste apagado perderán. 
+Básicamente tenemos disponibles dos teclas destinadas a los jugadores, la tecla 's' para el jugador 1 y la tecla 'g' para el jugador 2, además de una tecla extra, la 'p', que nos permite pausar el juego de forma que ninguno de los jugadores puede seguir jugando hasta que no se vuelva a pulsar dicha tecla.
+El juego termina cuando ambos jugadores han perdido y tras ello se apagan todas las luces, se muestra una secuencia de led "1 -> 2 -> 3" y por útlimo se encienden todos y se muestra la calificación final.
+El código relacionado con el kbhit() ha sido extraido de la siguiente fuente: https://cboard.cprogramming.com/c-programming/63166-kbhit-linux.html
+
+El resto del código ha sido desarrollado por Pedro David Gonzalez Vazquez y Jose Javies Cortes Tejada
