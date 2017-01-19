@@ -48,7 +48,7 @@ solution(STATE, VISITED, [], [STATE]):-
 	goal(STATE),
 	nl,
 	write('Visited: '),
-	showList(VISITED).
+	showList(VISITED, 0).
 
 solution(STATE, VISITED, [H_OPERATOR | T_OPERATOR], [STATE | P_STATE]):-
 	move(STATE, NEXT_STATE, C, H_OPERATOR),
@@ -60,16 +60,18 @@ solution(STATE, VISITED, [H_OPERATOR | T_OPERATOR], [STATE | P_STATE]):-
 query:-	begin(STATE),
 	solution(STATE,[STATE], OPERATORS, STATES),
 	writeln('Operators without repetitions: '),
-	showList(OPERATORS),
+	showList(OPERATORS, 0),
 	writeln('State path: '),
-	showList(STATES).
+	showList(STATES, 0).
 
-showList([]):- nl.
-showList([HEAD | TAIL]):-
+showList([], _):- nl.
+showList([HEAD | TAIL], C):-
 	tab(2),
-	writeln(HEAD),
-	showList(TAIL).
-
+	write(HEAD),
+	write(' '),
+	writeln(C),
+	D is C +1,
+	showList(TAIL, D).
 
 
 
